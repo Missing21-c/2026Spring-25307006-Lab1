@@ -1,0 +1,56 @@
+{
+  "modulePathMap": {
+    "phone": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\phone",
+    "musiclist": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist",
+    "musiccomment": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiccomment",
+    "live": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\live",
+    "mediacommon": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon",
+    "constantscommon": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\constantscommon",
+    "watch": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\watch"
+  },
+  "compileMode": "esmodule",
+  "projectRootPath": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master",
+  "nodeModulesPath": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\watch\\build\\default\\intermediates\\loader_out\\default\\node_modules",
+  "byteCodeHarInfo": {},
+  "declarationEntry": [],
+  "moduleName": "watch",
+  "hspNameOhmMap": {},
+  "harNameOhmMap": {},
+  "packageManagerType": "ohpm",
+  "compileEntry": [
+    "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\watch\\src\\main\\ets\\view\\PlayList.ets",
+    "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\watch\\src\\main\\ets\\view\\SongList.ets",
+    "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\watch\\src\\main\\ets\\view\\SongPage.ets",
+    "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\watch\\build\\default\\generated\\r\\default\\ResourceTable.ts"
+  ],
+  "otherCompileFiles": [],
+  "dynamicImportLibInfo": {},
+  "routerMap": [
+    {
+      "ohmurl": "@bundle:com.huawei.music.musichome/watch/ets/view/PlayList",
+      "name": "playList",
+      "pageSourceFile": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\watch\\src\\main\\ets\\view\\PlayList.ets",
+      "buildFunction": "PlayListBuilder"
+    },
+    {
+      "ohmurl": "@bundle:com.huawei.music.musichome/watch/ets/view/SongList",
+      "name": "songList",
+      "pageSourceFile": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\watch\\src\\main\\ets\\view\\SongList.ets",
+      "buildFunction": "SongListBuilder"
+    },
+    {
+      "ohmurl": "@bundle:com.huawei.music.musichome/watch/ets/view/SongPage",
+      "name": "songPage",
+      "pageSourceFile": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\watch\\src\\main\\ets\\view\\SongPage.ets",
+      "buildFunction": "SongPageBuilder"
+    }
+  ],
+  "hspResourcesMap": {},
+  "updateVersionInfo": {},
+  "customizedHar": false,
+  "anBuildOutPut": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\watch\\build\\default\\intermediates\\loader_out\\default\\an\\arm64-v8a",
+  "anBuildMode": "type",
+  "patchConfig": {
+    "changedFileList": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\watch\\build\\default\\intermediates\\patch\\default\\changedFileList.json"
+  }
+}

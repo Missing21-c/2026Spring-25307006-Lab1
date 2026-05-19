@@ -1,0 +1,554 @@
+{
+  "version": 1,
+  "ohos-module-phone": {
+    "SELECT_TARGET": "default",
+    "MODULE_BUILD_DIR": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\phone\\build",
+    "TARGETS": {
+      "default": {
+        "SOURCE_ROOT": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\phone\\src\\main",
+        "RESOURCES_PATH": [
+          "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\phone\\src\\main\\resources"
+        ],
+        "BUILD_PATH": {
+          "OUTPUT_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\phone\\build\\default\\outputs\\default",
+          "INTERMEDIA_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\phone\\build\\default\\intermediates",
+          "JS_ASSETS_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\phone\\build\\default\\intermediates\\loader_out\\default",
+          "JS_LITE_ASSETS_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\phone\\build\\default\\intermediates\\loader_out_lite\\default",
+          "RES_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\phone\\build\\default\\intermediates\\res\\default",
+          "RES_PROFILE_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\phone\\build\\default\\intermediates\\res\\default\\resources\\base\\profile",
+          "ETS_SUPER_VISUAL_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\phone\\build\\default\\cache\\default\\default@CompileArkTS\\esmodule",
+          "JS_SUPER_VISUAL_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\phone\\build\\default\\cache\\default\\default@CompileJS\\jsbundle",
+          "WORKER_LOADER": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\phone\\build\\default\\intermediates\\loader\\default\\loader.json",
+          "MANIFEST_JSON": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\phone\\build\\default\\intermediates\\manifest\\default",
+          "OUTPUT_METADATA_JSON": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\phone\\build\\default\\intermediates\\hap_metadata\\default\\output_metadata.json",
+          "SOURCE_MAP_DIR": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\phone\\build\\default\\intermediates\\source_map\\default"
+        },
+        "BUILD_OPTION": {
+          "debuggable": true
+        }
+      }
+    },
+    "BUILD_OPTION": {
+      "default-default": {
+        "debuggable": true,
+        "copyFrom": "default"
+      }
+    },
+    "BUILD_PROFILE_OPT": {
+      "apiType": "stageMode",
+      "buildOption": {},
+      "targets": [
+        {
+          "name": "default"
+        }
+      ]
+    },
+    "BUILD_CACHE_DIR": ""
+  },
+  "ohos-module-musiclist": {
+    "SELECT_TARGET": "default",
+    "MODULE_BUILD_DIR": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\build",
+    "TARGETS": {
+      "default": {
+        "SOURCE_ROOT": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main",
+        "RESOURCES_PATH": [
+          "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\resources"
+        ],
+        "BUILD_PATH": {
+          "OUTPUT_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\build\\default\\outputs\\default",
+          "INTERMEDIA_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\build\\default\\intermediates",
+          "JS_ASSETS_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\build\\default\\intermediates\\loader_out\\default",
+          "JS_LITE_ASSETS_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\build\\default\\intermediates\\loader_out_lite\\default",
+          "RES_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\build\\default\\intermediates\\res\\default",
+          "RES_PROFILE_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\build\\default\\intermediates\\res\\default\\resources\\base\\profile",
+          "ETS_SUPER_VISUAL_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\build\\default\\cache\\default\\default@HarCompileArkTS\\esmodule",
+          "JS_SUPER_VISUAL_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\build\\default\\cache\\default\\default@HarCompileJS\\jsbundle",
+          "WORKER_LOADER": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\build\\default\\intermediates\\loader\\default\\loader.json",
+          "MANIFEST_JSON": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\build\\default\\intermediates\\manifest\\default",
+          "OUTPUT_METADATA_JSON": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\build\\default\\intermediates\\hap_metadata\\default\\output_metadata.json",
+          "SOURCE_MAP_DIR": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\build\\default\\intermediates\\source_map\\default"
+        },
+        "BUILD_OPTION": {
+          "debuggable": true
+        }
+      }
+    },
+    "BUILD_OPTION": {
+      "default-default": {
+        "debuggable": true,
+        "copyFrom": "default"
+      }
+    },
+    "BUILD_PROFILE_OPT": {
+      "apiType": "stageMode",
+      "buildOption": {},
+      "targets": [
+        {
+          "name": "default"
+        }
+      ]
+    },
+    "BUILD_CACHE_DIR": ""
+  },
+  "ohos-module-musiccomment": {
+    "SELECT_TARGET": "default",
+    "MODULE_BUILD_DIR": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiccomment\\build",
+    "TARGETS": {
+      "default": {
+        "SOURCE_ROOT": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiccomment\\src\\main",
+        "RESOURCES_PATH": [
+          "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiccomment\\src\\main\\resources"
+        ],
+        "BUILD_PATH": {
+          "OUTPUT_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiccomment\\build\\default\\outputs\\default",
+          "INTERMEDIA_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiccomment\\build\\default\\intermediates",
+          "JS_ASSETS_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiccomment\\build\\default\\intermediates\\loader_out\\default",
+          "JS_LITE_ASSETS_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiccomment\\build\\default\\intermediates\\loader_out_lite\\default",
+          "RES_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiccomment\\build\\default\\intermediates\\res\\default",
+          "RES_PROFILE_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiccomment\\build\\default\\intermediates\\res\\default\\resources\\base\\profile",
+          "ETS_SUPER_VISUAL_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiccomment\\build\\default\\cache\\default\\default@HarCompileArkTS\\esmodule",
+          "JS_SUPER_VISUAL_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiccomment\\build\\default\\cache\\default\\default@HarCompileJS\\jsbundle",
+          "WORKER_LOADER": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiccomment\\build\\default\\intermediates\\loader\\default\\loader.json",
+          "MANIFEST_JSON": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiccomment\\build\\default\\intermediates\\manifest\\default",
+          "OUTPUT_METADATA_JSON": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiccomment\\build\\default\\intermediates\\hap_metadata\\default\\output_metadata.json",
+          "SOURCE_MAP_DIR": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiccomment\\build\\default\\intermediates\\source_map\\default"
+        },
+        "BUILD_OPTION": {
+          "debuggable": true
+        }
+      }
+    },
+    "BUILD_OPTION": {
+      "default-default": {
+        "debuggable": true,
+        "copyFrom": "default"
+      }
+    },
+    "BUILD_PROFILE_OPT": {
+      "apiType": "stageMode",
+      "buildOption": {},
+      "targets": [
+        {
+          "name": "default"
+        }
+      ]
+    },
+    "BUILD_CACHE_DIR": ""
+  },
+  "ohos-module-live": {
+    "SELECT_TARGET": "default",
+    "MODULE_BUILD_DIR": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\live\\build",
+    "TARGETS": {
+      "default": {
+        "SOURCE_ROOT": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\live\\src\\main",
+        "RESOURCES_PATH": [
+          "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\live\\src\\main\\resources"
+        ],
+        "BUILD_PATH": {
+          "OUTPUT_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\live\\build\\default\\outputs\\default",
+          "INTERMEDIA_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\live\\build\\default\\intermediates",
+          "JS_ASSETS_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\live\\build\\default\\intermediates\\loader_out\\default",
+          "JS_LITE_ASSETS_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\live\\build\\default\\intermediates\\loader_out_lite\\default",
+          "RES_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\live\\build\\default\\intermediates\\res\\default",
+          "RES_PROFILE_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\live\\build\\default\\intermediates\\res\\default\\resources\\base\\profile",
+          "ETS_SUPER_VISUAL_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\live\\build\\default\\cache\\default\\default@HarCompileArkTS\\esmodule",
+          "JS_SUPER_VISUAL_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\live\\build\\default\\cache\\default\\default@HarCompileJS\\jsbundle",
+          "WORKER_LOADER": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\live\\build\\default\\intermediates\\loader\\default\\loader.json",
+          "MANIFEST_JSON": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\live\\build\\default\\intermediates\\manifest\\default",
+          "OUTPUT_METADATA_JSON": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\live\\build\\default\\intermediates\\hap_metadata\\default\\output_metadata.json",
+          "SOURCE_MAP_DIR": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\live\\build\\default\\intermediates\\source_map\\default"
+        },
+        "BUILD_OPTION": {
+          "debuggable": true
+        }
+      }
+    },
+    "BUILD_OPTION": {
+      "default-default": {
+        "debuggable": true,
+        "copyFrom": "default"
+      }
+    },
+    "BUILD_PROFILE_OPT": {
+      "apiType": "stageMode",
+      "buildOption": {},
+      "targets": [
+        {
+          "name": "default"
+        }
+      ]
+    },
+    "BUILD_CACHE_DIR": ""
+  },
+  "ohos-module-mediacommon": {
+    "SELECT_TARGET": "default",
+    "MODULE_BUILD_DIR": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\build",
+    "TARGETS": {
+      "default": {
+        "SOURCE_ROOT": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main",
+        "RESOURCES_PATH": [
+          "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\resources"
+        ],
+        "BUILD_PATH": {
+          "OUTPUT_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\build\\default\\outputs\\default",
+          "INTERMEDIA_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\build\\default\\intermediates",
+          "JS_ASSETS_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\build\\default\\intermediates\\loader_out\\default",
+          "JS_LITE_ASSETS_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\build\\default\\intermediates\\loader_out_lite\\default",
+          "RES_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\build\\default\\intermediates\\res\\default",
+          "RES_PROFILE_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\build\\default\\intermediates\\res\\default\\resources\\base\\profile",
+          "ETS_SUPER_VISUAL_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\build\\default\\cache\\default\\default@HarCompileArkTS\\esmodule",
+          "JS_SUPER_VISUAL_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\build\\default\\cache\\default\\default@HarCompileJS\\jsbundle",
+          "WORKER_LOADER": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\build\\default\\intermediates\\loader\\default\\loader.json",
+          "MANIFEST_JSON": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\build\\default\\intermediates\\manifest\\default",
+          "OUTPUT_METADATA_JSON": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\build\\default\\intermediates\\hap_metadata\\default\\output_metadata.json",
+          "SOURCE_MAP_DIR": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\build\\default\\intermediates\\source_map\\default"
+        },
+        "BUILD_OPTION": {
+          "debuggable": true
+        }
+      }
+    },
+    "BUILD_OPTION": {
+      "default-default": {
+        "debuggable": true,
+        "copyFrom": "default"
+      }
+    },
+    "BUILD_PROFILE_OPT": {
+      "apiType": "stageMode",
+      "buildOption": {},
+      "targets": [
+        {
+          "name": "default"
+        }
+      ]
+    },
+    "BUILD_CACHE_DIR": ""
+  },
+  "ohos-module-constantscommon": {
+    "SELECT_TARGET": "default",
+    "MODULE_BUILD_DIR": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\constantscommon\\build",
+    "TARGETS": {
+      "default": {
+        "SOURCE_ROOT": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\constantscommon\\src\\main",
+        "RESOURCES_PATH": [
+          "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\constantscommon\\src\\main\\resources"
+        ],
+        "BUILD_PATH": {
+          "OUTPUT_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\constantscommon\\build\\default\\outputs\\default",
+          "INTERMEDIA_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\constantscommon\\build\\default\\intermediates",
+          "JS_ASSETS_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\constantscommon\\build\\default\\intermediates\\loader_out\\default",
+          "JS_LITE_ASSETS_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\constantscommon\\build\\default\\intermediates\\loader_out_lite\\default",
+          "RES_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\constantscommon\\build\\default\\intermediates\\res\\default",
+          "RES_PROFILE_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\constantscommon\\build\\default\\intermediates\\res\\default\\resources\\base\\profile",
+          "ETS_SUPER_VISUAL_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\constantscommon\\build\\default\\cache\\default\\default@HarCompileArkTS\\esmodule",
+          "JS_SUPER_VISUAL_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\constantscommon\\build\\default\\cache\\default\\default@HarCompileJS\\jsbundle",
+          "WORKER_LOADER": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\constantscommon\\build\\default\\intermediates\\loader\\default\\loader.json",
+          "MANIFEST_JSON": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\constantscommon\\build\\default\\intermediates\\manifest\\default",
+          "OUTPUT_METADATA_JSON": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\constantscommon\\build\\default\\intermediates\\hap_metadata\\default\\output_metadata.json",
+          "SOURCE_MAP_DIR": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\constantscommon\\build\\default\\intermediates\\source_map\\default"
+        },
+        "BUILD_OPTION": {
+          "debuggable": true
+        }
+      }
+    },
+    "BUILD_OPTION": {
+      "default-default": {
+        "debuggable": true,
+        "copyFrom": "default"
+      }
+    },
+    "BUILD_PROFILE_OPT": {
+      "apiType": "stageMode",
+      "buildOption": {},
+      "targets": [
+        {
+          "name": "default"
+        }
+      ]
+    },
+    "BUILD_CACHE_DIR": ""
+  },
+  "ohos-module-watch": {
+    "SELECT_TARGET": "default",
+    "MODULE_BUILD_DIR": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\watch\\build",
+    "TARGETS": {
+      "default": {
+        "SOURCE_ROOT": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\watch\\src\\main",
+        "RESOURCES_PATH": [
+          "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\watch\\src\\main\\resources"
+        ],
+        "BUILD_PATH": {
+          "OUTPUT_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\watch\\build\\default\\outputs\\default",
+          "INTERMEDIA_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\watch\\build\\default\\intermediates",
+          "JS_ASSETS_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\watch\\build\\default\\intermediates\\loader_out\\default",
+          "JS_LITE_ASSETS_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\watch\\build\\default\\intermediates\\loader_out_lite\\default",
+          "RES_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\watch\\build\\default\\intermediates\\res\\default",
+          "RES_PROFILE_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\watch\\build\\default\\intermediates\\res\\default\\resources\\base\\profile",
+          "ETS_SUPER_VISUAL_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\watch\\build\\default\\cache\\default\\default@CompileArkTS\\esmodule",
+          "JS_SUPER_VISUAL_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\watch\\build\\default\\cache\\default\\default@CompileJS\\jsbundle",
+          "WORKER_LOADER": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\watch\\build\\default\\intermediates\\loader\\default\\loader.json",
+          "MANIFEST_JSON": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\watch\\build\\default\\intermediates\\manifest\\default",
+          "OUTPUT_METADATA_JSON": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\watch\\build\\default\\intermediates\\hap_metadata\\default\\output_metadata.json",
+          "SOURCE_MAP_DIR": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\watch\\build\\default\\intermediates\\source_map\\default"
+        },
+        "BUILD_OPTION": {
+          "debuggable": true
+        }
+      },
+      "ohosTest": {
+        "SOURCE_ROOT": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\watch\\src\\ohosTest",
+        "RESOURCES_PATH": [
+          "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\watch\\src\\ohosTest\\resources"
+        ],
+        "BUILD_PATH": {
+          "OUTPUT_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\watch\\build\\default\\outputs\\ohosTest",
+          "INTERMEDIA_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\watch\\build\\default\\intermediates",
+          "JS_ASSETS_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\watch\\build\\default\\intermediates\\loader_out\\ohosTest",
+          "JS_LITE_ASSETS_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\watch\\build\\default\\intermediates\\loader_out_lite\\ohosTest",
+          "RES_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\watch\\build\\default\\intermediates\\res\\ohosTest",
+          "RES_PROFILE_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\watch\\build\\default\\intermediates\\res\\ohosTest\\resources\\base\\profile",
+          "ETS_SUPER_VISUAL_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\watch\\build\\default\\cache\\ohosTest\\ohosTest@OhosTestCompileArkTS\\esmodule",
+          "JS_SUPER_VISUAL_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\watch\\build\\default\\cache\\ohosTest\\ohosTest@OhosTestCompileJS\\jsbundle",
+          "WORKER_LOADER": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\watch\\build\\default\\intermediates\\loader\\ohosTest\\loader.json",
+          "MANIFEST_JSON": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\watch\\build\\default\\intermediates\\manifest\\ohosTest",
+          "OUTPUT_METADATA_JSON": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\watch\\build\\default\\intermediates\\hap_metadata\\ohosTest\\output_metadata.json",
+          "SOURCE_MAP_DIR": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\watch\\build\\default\\intermediates\\source_map\\ohosTest"
+        },
+        "BUILD_OPTION": {
+          "debuggable": true
+        }
+      }
+    },
+    "BUILD_OPTION": {
+      "default-default": {
+        "debuggable": true,
+        "copyFrom": "default",
+        "name": "debug"
+      }
+    },
+    "BUILD_PROFILE_OPT": {
+      "apiType": "stageMode",
+      "buildOption": {},
+      "buildOptionSet": [
+        {
+          "name": "release",
+          "arkOptions": {
+            "obfuscation": {
+              "ruleOptions": {
+                "enable": false,
+                "files": [
+                  "./obfuscation-rules.txt"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "name": "default"
+        },
+        {
+          "name": "debug"
+        }
+      ],
+      "targets": [
+        {
+          "name": "default"
+        },
+        {
+          "name": "ohosTest"
+        }
+      ]
+    },
+    "BUILD_CACHE_DIR": ""
+  },
+  "ohos-project": {
+    "SELECT_PRODUCT_NAME": "default",
+    "MODULE_BUILD_DIR": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\build",
+    "BUNDLE_NAME": "com.huawei.music.musichome",
+    "VERSION_CODE": 1000000,
+    "VERSION_NAME": "1.0.0",
+    "BUILD_PATH": {
+      "OUTPUT_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\build\\outputs\\default"
+    },
+    "MODULES": [
+      {
+        "name": "phone",
+        "srcPath": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\phone",
+        "targets": [
+          {
+            "name": "default",
+            "applyToProducts": [
+              "default"
+            ]
+          }
+        ],
+        "belongProjectPath": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master"
+      },
+      {
+        "name": "musiclist",
+        "srcPath": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist",
+        "targets": [
+          {
+            "name": "default",
+            "applyToProducts": [
+              "default"
+            ]
+          }
+        ],
+        "belongProjectPath": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master"
+      },
+      {
+        "name": "musiccomment",
+        "srcPath": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiccomment",
+        "targets": [
+          {
+            "name": "default",
+            "applyToProducts": [
+              "default"
+            ]
+          }
+        ],
+        "belongProjectPath": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master"
+      },
+      {
+        "name": "live",
+        "srcPath": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\live",
+        "targets": [
+          {
+            "name": "default",
+            "applyToProducts": [
+              "default"
+            ]
+          }
+        ],
+        "belongProjectPath": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master"
+      },
+      {
+        "name": "mediacommon",
+        "srcPath": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon",
+        "belongProjectPath": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master"
+      },
+      {
+        "name": "constantscommon",
+        "srcPath": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\constantscommon",
+        "belongProjectPath": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master"
+      },
+      {
+        "name": "watch",
+        "srcPath": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\watch",
+        "targets": [
+          {
+            "name": "default",
+            "applyToProducts": [
+              "default"
+            ]
+          }
+        ],
+        "belongProjectPath": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master"
+      }
+    ],
+    "PROFILE_OPT": {
+      "app": {
+        "signingConfigs": [],
+        "products": [
+          {
+            "name": "default",
+            "signingConfig": "default",
+            "compatibleSdkVersion": "5.1.0(18)",
+            "targetSdkVersion": "6.0.2(22)",
+            "runtimeOS": "HarmonyOS"
+          }
+        ],
+        "buildModeSet": [
+          {
+            "name": "debug"
+          },
+          {
+            "name": "release"
+          }
+        ]
+      },
+      "modules": [
+        {
+          "name": "phone",
+          "srcPath": "./products/phone",
+          "targets": [
+            {
+              "name": "default",
+              "applyToProducts": [
+                "default"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "musiclist",
+          "srcPath": "./features/musiclist",
+          "targets": [
+            {
+              "name": "default",
+              "applyToProducts": [
+                "default"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "musiccomment",
+          "srcPath": "./features/musiccomment",
+          "targets": [
+            {
+              "name": "default",
+              "applyToProducts": [
+                "default"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "live",
+          "srcPath": "./features/live",
+          "targets": [
+            {
+              "name": "default",
+              "applyToProducts": [
+                "default"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "mediacommon",
+          "srcPath": "./common/mediacommon"
+        },
+        {
+          "name": "constantscommon",
+          "srcPath": "./common/constantscommon"
+        },
+        {
+          "name": "watch",
+          "srcPath": "./products/watch",
+          "targets": [
+            {
+              "name": "default",
+              "applyToProducts": [
+                "default"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "CONFIG_PROPERTIES": {
+      "enableSignTask": true,
+      "skipNativeIncremental": false,
+      "hvigor.keepDependency": true
+    },
+    "OVERALL_PROJECT_PATHS": [
+      "D:\\kaiyuan\\MusicHome-master\\MusicHome-master"
+    ],
+    "BUILD_CACHE_DIR": ""
+  }
+}

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="EMPTY_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$/../..">
+      <excludeFolder url="file://$MODULE_DIR$/../../.arkui-x/android/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../.arkui-x/android/app/.cxx" />
+      <excludeFolder url="file://$MODULE_DIR$/../../.arkui-x/android/app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../.arkui-x/android/library/.cxx" />
+      <excludeFolder url="file://$MODULE_DIR$/../../.arkui-x/android/library/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../.arkui-x/ios/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../common/constantscommon/.cxx" />
+      <excludeFolder url="file://$MODULE_DIR$/../../common/constantscommon/.preview" />
+      <excludeFolder url="file://$MODULE_DIR$/../../common/constantscommon/.test" />
+      <excludeFolder url="file://$MODULE_DIR$/../../common/constantscommon/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../common/constantscommon/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../common/constantscommon/oh_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../common/mediacommon/.cxx" />
+      <excludeFolder url="file://$MODULE_DIR$/../../common/mediacommon/.preview" />
+      <excludeFolder url="file://$MODULE_DIR$/../../common/mediacommon/.test" />
+      <excludeFolder url="file://$MODULE_DIR$/../../common/mediacommon/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../common/mediacommon/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../common/mediacommon/oh_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../features/live/.cxx" />
+      <excludeFolder url="file://$MODULE_DIR$/../../features/live/.preview" />
+      <excludeFolder url="file://$MODULE_DIR$/../../features/live/.test" />
+      <excludeFolder url="file://$MODULE_DIR$/../../features/live/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../features/live/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../features/live/oh_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../features/musiccomment/.cxx" />
+      <excludeFolder url="file://$MODULE_DIR$/../../features/musiccomment/.preview" />
+      <excludeFolder url="file://$MODULE_DIR$/../../features/musiccomment/.test" />
+      <excludeFolder url="file://$MODULE_DIR$/../../features/musiccomment/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../features/musiccomment/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../features/musiccomment/oh_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../features/musiclist/.cxx" />
+      <excludeFolder url="file://$MODULE_DIR$/../../features/musiclist/.preview" />
+      <excludeFolder url="file://$MODULE_DIR$/../../features/musiclist/.test" />
+      <excludeFolder url="file://$MODULE_DIR$/../../features/musiclist/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../features/musiclist/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../features/musiclist/oh_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../oh_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../products/phone/.cxx" />
+      <excludeFolder url="file://$MODULE_DIR$/../../products/phone/.preview" />
+      <excludeFolder url="file://$MODULE_DIR$/../../products/phone/.test" />
+      <excludeFolder url="file://$MODULE_DIR$/../../products/phone/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../products/phone/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../products/phone/oh_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../products/watch/.cxx" />
+      <excludeFolder url="file://$MODULE_DIR$/../../products/watch/.preview" />
+      <excludeFolder url="file://$MODULE_DIR$/../../products/watch/.test" />
+      <excludeFolder url="file://$MODULE_DIR$/../../products/watch/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../products/watch/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../products/watch/oh_modules" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="" scope="PROVIDED">
+      <library name="ArkTS-HarmonyOS-6.1.0(hms)" type="ArkUI">
+        <CLASSES />
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$APPLICATION_HOME_DIR$/sdk/default/hms/ets/api" />
+          <root url="file://$APPLICATION_HOME_DIR$/sdk/default/hms/ets/kits" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="" scope="PROVIDED">
+      <library name="ArkTS-HarmonyOS-6.1.0(openharmony)" type="ArkUI">
+        <CLASSES />
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$APPLICATION_HOME_DIR$/sdk/default/openharmony/ets/api" />
+          <root url="file://$APPLICATION_HOME_DIR$/sdk/default/openharmony/ets/component" />
+          <root url="file://$APPLICATION_HOME_DIR$/sdk/default/openharmony/ets/kits" />
+          <root url="file://$APPLICATION_HOME_DIR$/sdk/default/openharmony/ets/arkts" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+  </component>
+</module>

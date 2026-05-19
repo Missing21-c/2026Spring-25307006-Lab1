@@ -1,0 +1,16 @@
+{
+  "module": {
+    "name": "musiclist",
+    "type": "har",
+    "description": "$string:list_shared_desc",
+    "deviceTypes": [
+      "phone",
+      "tablet"
+    ],
+    "requestPermissions": [
+      {
+        "name": "ohos.permission.KEEP_BACKGROUND_RUNNING"
+      }
+    ]
+  }
+}

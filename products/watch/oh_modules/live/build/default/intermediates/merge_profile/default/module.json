@@ -1,0 +1,29 @@
+{
+	"app": {
+		"bundleName": "com.huawei.music.musichome",
+		"debug": true,
+		"versionCode": 1000000,
+		"versionName": "1.0.0",
+		"minAPIVersion": 50100018,
+		"targetAPIVersion": 60002022,
+		"apiReleaseType": "Release",
+		"targetMinorAPIVersion": 0,
+		"targetPatchAPIVersion": 0,
+		"compileSdkVersion": "6.1.0.105",
+		"compileSdkType": "HarmonyOS",
+		"appEnvironments": [],
+		"bundleType": "app",
+		"buildMode": "debug"
+	},
+	"module": {
+		"name": "live",
+		"type": "har",
+		"description": "$string:live_shared_desc",
+		"deviceTypes": [
+			"phone",
+			"tablet"
+		],
+		"packageName": "live",
+		"installationFree": false
+	}
+}

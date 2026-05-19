@@ -1,0 +1,179 @@
+{
+  "lockVersion": "1.0",
+  "settings": {
+    "resolveConflict": true,
+    "resolveConflictStrict": false,
+    "installAll": true
+  },
+  "overrides": {},
+  "overrideDependencyMap": {},
+  "modules": {
+    ".": {
+      "name": "",
+      "dependencies": {},
+      "devDependencies": {},
+      "dynamicDependencies": {},
+      "maskedByOverrideDependencyMap": false
+    },
+    "common/constantscommon": {
+      "name": "constantscommon",
+      "dependencies": {},
+      "devDependencies": {},
+      "dynamicDependencies": {},
+      "maskedByOverrideDependencyMap": false
+    },
+    "common/mediacommon": {
+      "name": "mediacommon",
+      "dependencies": {
+        "constantscommon": {
+          "specifier": "file:common/constantscommon",
+          "version": "file:common/constantscommon"
+        }
+      },
+      "devDependencies": {},
+      "dynamicDependencies": {},
+      "maskedByOverrideDependencyMap": false
+    },
+    "features/live": {
+      "name": "live",
+      "dependencies": {},
+      "devDependencies": {},
+      "dynamicDependencies": {},
+      "maskedByOverrideDependencyMap": false
+    },
+    "features/musiccomment": {
+      "name": "musiccomment",
+      "dependencies": {
+        "mediacommon": {
+          "specifier": "file:common/mediacommon",
+          "version": "file:common/mediacommon"
+        },
+        "constantscommon": {
+          "specifier": "file:common/constantscommon",
+          "version": "file:common/constantscommon"
+        }
+      },
+      "devDependencies": {},
+      "dynamicDependencies": {},
+      "maskedByOverrideDependencyMap": false
+    },
+    "features/musiclist": {
+      "name": "musiclist",
+      "dependencies": {
+        "mediacommon": {
+          "specifier": "file:common/mediacommon",
+          "version": "file:common/mediacommon"
+        },
+        "constantscommon": {
+          "specifier": "file:common/constantscommon",
+          "version": "file:common/constantscommon"
+        }
+      },
+      "devDependencies": {},
+      "dynamicDependencies": {},
+      "maskedByOverrideDependencyMap": false
+    },
+    "products/phone": {
+      "name": "phone",
+      "dependencies": {
+        "constantscommon": {
+          "specifier": "file:common/constantscommon",
+          "version": "file:common/constantscommon"
+        },
+        "live": {
+          "specifier": "file:features/live",
+          "version": "file:features/live"
+        },
+        "musiccomment": {
+          "specifier": "file:features/musiccomment",
+          "version": "file:features/musiccomment"
+        },
+        "musiclist": {
+          "specifier": "file:features/musiclist",
+          "version": "file:features/musiclist"
+        }
+      },
+      "devDependencies": {},
+      "dynamicDependencies": {},
+      "maskedByOverrideDependencyMap": false
+    },
+    "products/watch": {
+      "name": "watch",
+      "dependencies": {
+        "musiclist": {
+          "specifier": "file:features/musiclist",
+          "version": "file:features/musiclist"
+        },
+        "constantscommon": {
+          "specifier": "file:common/constantscommon",
+          "version": "file:common/constantscommon"
+        },
+        "live": {
+          "specifier": "file:features/live",
+          "version": "file:features/live"
+        },
+        "musiccomment": {
+          "specifier": "file:features/musiccomment",
+          "version": "file:features/musiccomment"
+        },
+        "mediacommon": {
+          "specifier": "file:common/mediacommon",
+          "version": "file:common/mediacommon"
+        }
+      },
+      "devDependencies": {},
+      "dynamicDependencies": {},
+      "maskedByOverrideDependencyMap": false
+    }
+  },
+  "packages": {
+    "live@file:features/live": {
+      "storePath": "features/live",
+      "dependencies": {},
+      "dynamicDependencies": {},
+      "dev": false,
+      "dynamic": false,
+      "maskedByOverrideDependencyMap": false
+    },
+    "constantscommon@file:common/constantscommon": {
+      "storePath": "common/constantscommon",
+      "dependencies": {},
+      "dynamicDependencies": {},
+      "dev": false,
+      "dynamic": false,
+      "maskedByOverrideDependencyMap": false
+    },
+    "mediacommon@file:common/mediacommon": {
+      "storePath": "common/mediacommon",
+      "dependencies": {
+        "constantscommon": "common/constantscommon"
+      },
+      "dynamicDependencies": {},
+      "dev": false,
+      "dynamic": false,
+      "maskedByOverrideDependencyMap": false
+    },
+    "musiclist@file:features/musiclist": {
+      "storePath": "features/musiclist",
+      "dependencies": {
+        "mediacommon": "common/mediacommon",
+        "constantscommon": "common/constantscommon"
+      },
+      "dynamicDependencies": {},
+      "dev": false,
+      "dynamic": false,
+      "maskedByOverrideDependencyMap": false
+    },
+    "musiccomment@file:features/musiccomment": {
+      "storePath": "features/musiccomment",
+      "dependencies": {
+        "mediacommon": "common/mediacommon",
+        "constantscommon": "common/constantscommon"
+      },
+      "dynamicDependencies": {},
+      "dev": false,
+      "dynamic": false,
+      "maskedByOverrideDependencyMap": false
+    }
+  }
+}

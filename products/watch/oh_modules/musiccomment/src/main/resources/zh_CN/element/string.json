@@ -1,0 +1,20 @@
+{
+  "string": [
+    {
+      "name": "comment_title",
+      "value": "评论"
+    },
+    {
+      "name": "wonderful_comment",
+      "value": "精彩评论（999+）"
+    },
+    {
+      "name": "new_comment",
+      "value": "最新评论"
+    },
+    {
+      "name": "comment_shared_desc",
+      "value": "music comment"
+    }
+  ]
+}
