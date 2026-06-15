@@ -30,5 +30,6 @@ export struct LivePage {
     .width(LiveConstants.FULL_WIDTH_PERCENT)
     .height(LiveConstants.FULL_HEIGHT_PERCENT)
     .padding({ top: this.getUIContext().px2vp(this.topRectHeight) })
+    .expandSafeArea([SafeAreaType.SYSTEM])
   }
 }

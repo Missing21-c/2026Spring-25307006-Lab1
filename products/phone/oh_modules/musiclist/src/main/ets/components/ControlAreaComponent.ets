@@ -14,8 +14,10 @@
  */
 
 import { BreakpointConstants, StyleConstants } from 'constantscommon';
-import { BreakpointType, MediaService } from 'mediacommon';
+import { BreakpointType, MediaService, SongItem } from 'mediacommon';
 import { PlayerConstants } from '../constants/PlayerConstants';
+import { AirDropButton } from 'airdrop';
+import { MusicInfo } from 'airdrop';
 
 @Preview
 @Component
@@ -29,6 +31,8 @@ export struct ControlAreaComponent {
   @State playModeIndex: number = 0;
   @StorageLink('imageColor') imageColor: string = '';
   @StorageLink('pageShowTime') pageShowTime: number = 0;
+  @StorageLink('songList') songList: SongItem[] = [];
+  @StorageProp('selectIndex') selectIndex: number = 0;
 
   build() {
     Column() {
@@ -54,9 +58,35 @@ export struct ControlAreaComponent {
             md: $r('app.float.twenty_four'),
             lg: $r('app.float.control_image_lg')
           }).getValue(this.currentBreakpoint))
+          .onClick(() => {
+            this.getUIContext().getPromptAction().showToast({
+              message: '评论功能',
+              duration: 2000
+            });
+          })
         Image($r('app.media.ic_more'))
           .controlImageBuilder()
           .width(new BreakpointType({
+            sm: $r('app.float.twenty_four'),
+            md: $r('app.float.twenty_four'),
+            lg: $r('app.float.control_image_lg')
+          }).getValue(this.currentBreakpoint))
+          .onClick(() => {
+            this.getUIContext().getPromptAction().showToast({
+              message: '下载功能',
+              duration: 2000
+            });
+          })
+        // 投送按钮
+        AirDropButton({
+          musicInfo: this.getCurrentMusicInfo()
+        })
+          .width(new BreakpointType({
+            sm: $r('app.float.twenty_four'),
+            md: $r('app.float.twenty_four'),
+            lg: $r('app.float.control_image_lg')
+          }).getValue(this.currentBreakpoint))
+          .height(new BreakpointType({
             sm: $r('app.float.twenty_four'),
             md: $r('app.float.twenty_four'),
             lg: $r('app.float.control_image_lg')
@@ -158,6 +188,24 @@ export struct ControlAreaComponent {
         right: $r('app.float.control_padding')
       })
     }
+  }
+
+  /**
+   * 获取当前音乐信息用于投送
+   */
+  private getCurrentMusicInfo(): MusicInfo | null {
+    if (this.songList.length === 0 || this.selectIndex >= this.songList.length) {
+      return null;
+    }
+    const song = this.songList[this.selectIndex];
+    return {
+      songId: song.title,
+      title: song.title,
+      singer: song.singer,
+      coverUrl: '',
+      playProgress: this.value,
+      duration: this.max
+    };
   }
 }
 

@@ -123,17 +123,17 @@ class SongList extends ViewPU {
                                 this.observeComponentCreation2((elmtId, isInitialRender) => {
                                     Row.create();
                                     Row.width(this.HOME_BTN_WIDTH);
-                                    Row.height({ "id": 134217751, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
-                                    Row.padding({ left: { "id": 134217757, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" }, right: { "id": 134217757, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" } });
+                                    Row.height({ "id": 184549399, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
+                                    Row.padding({ left: { "id": 184549405, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" }, right: { "id": 184549405, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" } });
                                     Row.borderRadius(StyleConstants.CIRCLE_BORDER_RADIUS);
                                     Row.focusable(true);
                                     Row.focusOnTouch(true);
-                                    Row.backgroundColor({ "id": 134217744, "type": 10001, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
+                                    Row.backgroundColor({ "id": 184549392, "type": 10001, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
                                 }, Row);
                                 this.observeComponentCreation2((elmtId, isInitialRender) => {
                                     Image.create(item.label);
-                                    Image.width({ "id": 134217756, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
-                                    Image.height({ "id": 134217756, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
+                                    Image.width({ "id": 184549404, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
+                                    Image.height({ "id": 184549404, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
                                     Image.borderRadius(StyleConstants.CIRCLE_BORDER_RADIUS);
                                 }, Image);
                                 this.observeComponentCreation2((elmtId, isInitialRender) => {
@@ -143,12 +143,12 @@ class SongList extends ViewPU {
                                 this.observeComponentCreation2((elmtId, isInitialRender) => {
                                     Text.create(item.title);
                                     Text.fontWeight(FontWeight.Bold);
-                                    Text.fontColor({ "id": 134217743, "type": 10001, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
+                                    Text.fontColor({ "id": 184549391, "type": 10001, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
                                 }, Text);
                                 Text.pop();
                                 this.observeComponentCreation2((elmtId, isInitialRender) => {
                                     Text.create(item.singer);
-                                    Text.fontColor({ "id": 134217750, "type": 10001, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
+                                    Text.fontColor({ "id": 184549398, "type": 10001, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
                                 }, Text);
                                 Text.pop();
                                 Column.pop();

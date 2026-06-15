@@ -1,0 +1,11 @@
+{
+  "module": {
+    "name": "airdrop",
+    "type": "har",
+    "description": "$string:airdrop_module_desc",
+    "deviceTypes": [
+      "phone",
+      "tablet"
+    ]
+  }
+}

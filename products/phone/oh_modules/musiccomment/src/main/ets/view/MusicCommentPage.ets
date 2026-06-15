@@ -191,5 +191,6 @@ export struct MusicCommentPage {
     }
     .backgroundColor(Color.White)
     .padding({ top: this.getUIContext().px2vp(this.topRectHeight) })
+    .expandSafeArea([SafeAreaType.SYSTEM])
   }
 }

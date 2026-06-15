@@ -18,6 +18,8 @@ import { BreakpointConstants, StyleConstants } from 'constantscommon';
 import { MediaService, SongItem, BreakpointType } from 'mediacommon';
 import { SongDataSource } from '../viewmodel/SongDataSource';
 import { ContentConstants } from '../constants/ContentConstants';
+import { FilePickerComponent } from './FilePickerComponent';
+import { LocalFileListComponent } from './LocalFileListComponent';
 
 @Component
 export struct PlayList {
@@ -112,6 +114,7 @@ export struct PlayList {
   build() {
     Column() {
       this.PlayAll();
+      
       List() {
         LazyForEach(new SongDataSource(this.songList), (item: SongItem, index: number) => {
           ListItem() {
@@ -138,6 +141,10 @@ export struct PlayList {
         startMargin: $r('app.float.list_item_padding'),
         endMargin: $r('app.float.list_item_padding')
       })
+      
+      // 本地文件列表组件
+      LocalFileListComponent()
+        .margin({ top: 16 })
     }
     .padding({
       top: this.currentBreakpoint === BreakpointConstants.BREAKPOINT_SM ? 0 : $r('app.float.list_area_padding_top'),

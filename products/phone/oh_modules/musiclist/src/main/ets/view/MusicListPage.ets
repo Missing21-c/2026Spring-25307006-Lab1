@@ -53,6 +53,7 @@ export struct MusicListPage {
         this.deviceHeight = newArea.height;
       }
     })
+    .expandSafeArea([SafeAreaType.SYSTEM])
   }
 
   pageTransition() {

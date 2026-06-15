@@ -1,0 +1,11 @@
+{
+  "module": {
+    "name": "login",
+    "type": "har",
+    "description": "$string:login_shared_desc",
+    "deviceTypes": [
+      "phone",
+      "tablet"
+    ]
+  }
+}

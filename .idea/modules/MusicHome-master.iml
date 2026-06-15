@@ -53,6 +53,24 @@
       <excludeFolder url="file://$MODULE_DIR$/../../products/watch/build" />
       <excludeFolder url="file://$MODULE_DIR$/../../products/watch/node_modules" />
       <excludeFolder url="file://$MODULE_DIR$/../../products/watch/oh_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../features/login/.cxx" />
+      <excludeFolder url="file://$MODULE_DIR$/../../features/login/.preview" />
+      <excludeFolder url="file://$MODULE_DIR$/../../features/login/.test" />
+      <excludeFolder url="file://$MODULE_DIR$/../../features/login/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../features/login/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../features/login/oh_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../features/register/.cxx" />
+      <excludeFolder url="file://$MODULE_DIR$/../../features/register/.preview" />
+      <excludeFolder url="file://$MODULE_DIR$/../../features/register/.test" />
+      <excludeFolder url="file://$MODULE_DIR$/../../features/register/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../features/register/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../features/register/oh_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../features/airdrop/.cxx" />
+      <excludeFolder url="file://$MODULE_DIR$/../../features/airdrop/.preview" />
+      <excludeFolder url="file://$MODULE_DIR$/../../features/airdrop/.test" />
+      <excludeFolder url="file://$MODULE_DIR$/../../features/airdrop/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../features/airdrop/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/../../features/airdrop/oh_modules" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library" exported="" scope="PROVIDED">

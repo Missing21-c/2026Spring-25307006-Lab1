@@ -43,6 +43,12 @@ export struct TopAreaComponent {
           lg: $r('app.float.control_image_lg')
         }).getValue(this.currentBreakpoint))
         .objectFit(ImageFit.Contain)
+        .onClick(() => {
+          this.getUIContext().getPromptAction().showToast({
+            message: '分享功能',
+            duration: 2000
+          });
+        })
     }
     .height($r('app.float.info_margin_top_sm'))
     .width(StyleConstants.FULL_WIDTH)

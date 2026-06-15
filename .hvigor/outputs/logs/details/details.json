@@ -4,9 +4,10 @@
       {
         "MODULE_NAME": "45569da57f4b7bf472d7a864ef4781451cae6383fee9fb0ae40c59aa1ce475b7",
         "API_TYPE": "stageMode",
-        "INCLUDE_IN_BUILD": false,
-        "IS_COMMAND_LINE_ENTRY_MODULE": false,
-        "IS_INCREMENTAL_MODULE": false
+        "INCLUDE_IN_BUILD": true,
+        "IS_COMMAND_LINE_ENTRY_MODULE": true,
+        "MODULE_TYPE": "entry",
+        "IS_INCREMENTAL_MODULE": true
       },
       {
         "MODULE_NAME": "6f3264250b092c5225f8f8bf4acd079b55060a89eb0d4526eef052ff3aedf301",
@@ -33,6 +34,30 @@
         "IS_INCREMENTAL_MODULE": true
       },
       {
+        "MODULE_NAME": "428821350e9691491f616b754cd8315fb86d797ab35d843479e732ef90665324",
+        "API_TYPE": "stageMode",
+        "INCLUDE_IN_BUILD": true,
+        "IS_COMMAND_LINE_ENTRY_MODULE": false,
+        "MODULE_TYPE": "har",
+        "IS_INCREMENTAL_MODULE": true
+      },
+      {
+        "MODULE_NAME": "87780fa5de684e87cb92b279f0bc07b14f572851e73b8943a097c1770a5f38e6",
+        "API_TYPE": "stageMode",
+        "INCLUDE_IN_BUILD": true,
+        "IS_COMMAND_LINE_ENTRY_MODULE": false,
+        "MODULE_TYPE": "har",
+        "IS_INCREMENTAL_MODULE": true
+      },
+      {
+        "MODULE_NAME": "13bc8e27d5c8abbfee06fadf6c210524b57316a2222181960a6b175b8f387e0c",
+        "API_TYPE": "stageMode",
+        "INCLUDE_IN_BUILD": true,
+        "IS_COMMAND_LINE_ENTRY_MODULE": false,
+        "MODULE_TYPE": "har",
+        "IS_INCREMENTAL_MODULE": true
+      },
+      {
         "MODULE_NAME": "4a908a58606906503cdb017c06edfea83a2d5cdc041ede5c40eba9845b616087",
         "API_TYPE": "stageMode",
         "INCLUDE_IN_BUILD": true,
@@ -51,17 +76,13 @@
       {
         "MODULE_NAME": "baed831623943be39ebf0ef44ae1e9c8fc3eeab51b5f89c113ca410d76a34c1d",
         "API_TYPE": "stageMode",
-        "INCLUDE_IN_BUILD": true,
-        "IS_COMMAND_LINE_ENTRY_MODULE": true,
-        "MODULE_TYPE": "entry",
-        "INCREMENTAL_TASKS": {
-          "COMPILE_ARKTS": false
-        },
+        "INCLUDE_IN_BUILD": false,
+        "IS_COMMAND_LINE_ENTRY_MODULE": false,
         "IS_INCREMENTAL_MODULE": false
       }
     ],
     "NATIVE_COMPILER": "Default",
-    "IS_FULL_BUILD": true,
+    "IS_FULL_BUILD": false,
     "BUILD_MODE": "debug"
   },
   "HVIGOR": {
@@ -70,90 +91,62 @@
     "IS_PARALLEL": true,
     "IS_HVIGORFILE_TYPE_CHECK": false,
     "TASK_TIME": {
-      "baed831623943be39ebf0ef44ae1e9c8fc3eeab51b5f89c113ca410d76a34c1d": {
-        "PreBuild": 24004100,
-        "CreateModuleInfo": 985600,
-        "GenerateMetadata": 2772700,
-        "PreCheckSyscap": 1851800,
-        "GeneratePkgContextInfo": 10586600,
-        "GeneratePkgSdkInfo": 4924400,
-        "ProcessIntegratedHsp": 892100,
-        "SyscapTransform": 2310000,
-        "ProcessRouterMap": 8112000,
-        "ProcessShareConfig": 2860500,
-        "ProcessStartupConfig": 1518400,
-        "GenerateLoaderJson": 18725500,
-        "CreateBuildProfile": 3468400,
-        "MergeProfile": 9032400,
-        "MakePackInfo": 4304100,
-        "ProcessProfile": 543236400,
-        "ProcessResource": 11359600,
-        "ConfigureCmake": 323400,
-        "CompileResource": 935162200,
-        "BuildNativeWithCmake": 262000,
-        "BuildJS": 3825900,
-        "BuildNativeWithNinja": 1171700,
-        "ProcessLibs": 8606000,
-        "DoNativeStrip": 2589900,
-        "CacheNativeLibs": 1222168400,
-        "CompileArkTS": 24280598400,
-        "GeneratePkgModuleJson": 2837200,
-        "ProcessCompiledResources": 620900,
-        "PackageHap": 1236077400,
-        "PackingCheck": 9099000,
-        "SignHap": 1556300,
-        "CollectDebugSymbol": 1219200,
-        "assembleHap": 382900
-      },
-      "6f3264250b092c5225f8f8bf4acd079b55060a89eb0d4526eef052ff3aedf301": {
-        "PreBuild": 33849000,
-        "CreateHarBuildProfile": 1228200,
-        "MergeProfile": 4403400,
-        "ConfigureCmake": 318000,
-        "BuildNativeWithCmake": 516100,
-        "BuildNativeWithNinja": 1312000,
-        "ProcessLibs": 3579200,
-        "DoNativeStrip": 3223900
-      },
-      "4a908a58606906503cdb017c06edfea83a2d5cdc041ede5c40eba9845b616087": {
-        "PreBuild": 9795200,
-        "CreateHarBuildProfile": 1161900,
-        "MergeProfile": 3391700,
-        "ConfigureCmake": 313200,
-        "BuildNativeWithCmake": 298000,
-        "BuildNativeWithNinja": 1251900,
-        "ProcessLibs": 3742100,
-        "DoNativeStrip": 2214600
+      "45569da57f4b7bf472d7a864ef4781451cae6383fee9fb0ae40c59aa1ce475b7": {
+        "CreateModuleInfo": 857400,
+        "PreCheckSyscap": 255400,
+        "GeneratePkgContextInfo": 9537500,
+        "ProcessIntegratedHsp": 872800,
+        "SyscapTransform": 3208700,
+        "ProcessStartupConfig": 1299800,
+        "ConfigureCmake": 257000,
+        "BuildJS": 5631000,
+        "BuildNativeWithCmake": 232100,
+        "BuildNativeWithNinja": 811200,
+        "ProcessCompiledResources": 498500,
+        "PackingCheck": 6669200,
+        "SignHap": 2666300,
+        "CollectDebugSymbol": 1271600,
+        "assembleHap": 213000
       },
       "a824958fc24d2ea0bbf89ff151afe845ffb798f9d28963f8c8598166f2dde294": {
-        "PreBuild": 16856200,
-        "CreateHarBuildProfile": 1474600,
-        "ConfigureCmake": 430900,
-        "MergeProfile": 3919200,
-        "BuildNativeWithCmake": 485900,
-        "BuildNativeWithNinja": 1493600,
-        "ProcessLibs": 5816800,
-        "DoNativeStrip": 4855700
+        "ConfigureCmake": 258800,
+        "BuildNativeWithCmake": 245000,
+        "BuildNativeWithNinja": 595000
       },
       "247610f4dedd4ab7247d07dbda19c81ca9817f85820742cad49d407ffae9e4ed": {
-        "PreBuild": 11939100,
-        "CreateHarBuildProfile": 1074900,
-        "ConfigureCmake": 253800,
-        "MergeProfile": 2801600,
-        "BuildNativeWithCmake": 424500,
-        "BuildNativeWithNinja": 1195600,
-        "ProcessLibs": 4376800,
-        "DoNativeStrip": 2765200
+        "ConfigureCmake": 218200,
+        "BuildNativeWithCmake": 244700,
+        "BuildNativeWithNinja": 762100
+      },
+      "4a908a58606906503cdb017c06edfea83a2d5cdc041ede5c40eba9845b616087": {
+        "ConfigureCmake": 272700,
+        "BuildNativeWithCmake": 255300,
+        "BuildNativeWithNinja": 684800
       },
       "73af015a6bf3e652042893d7bd4af9cabcab2b511e79fcc610b54a3deae2dcdb": {
-        "PreBuild": 9850500,
-        "CreateHarBuildProfile": 1198600,
-        "MergeProfile": 3550200,
-        "ConfigureCmake": 319900,
-        "BuildNativeWithCmake": 394300,
-        "BuildNativeWithNinja": 1172000,
-        "ProcessLibs": 2943600,
-        "DoNativeStrip": 2417700
+        "ConfigureCmake": 260300,
+        "BuildNativeWithCmake": 333600,
+        "BuildNativeWithNinja": 701300
+      },
+      "428821350e9691491f616b754cd8315fb86d797ab35d843479e732ef90665324": {
+        "ConfigureCmake": 200400,
+        "BuildNativeWithCmake": 234300,
+        "BuildNativeWithNinja": 501600
+      },
+      "13bc8e27d5c8abbfee06fadf6c210524b57316a2222181960a6b175b8f387e0c": {
+        "ConfigureCmake": 226500,
+        "BuildNativeWithCmake": 206000,
+        "BuildNativeWithNinja": 503800
+      },
+      "87780fa5de684e87cb92b279f0bc07b14f572851e73b8943a097c1770a5f38e6": {
+        "ConfigureCmake": 218700,
+        "BuildNativeWithCmake": 264600,
+        "BuildNativeWithNinja": 532200
+      },
+      "6f3264250b092c5225f8f8bf4acd079b55060a89eb0d4526eef052ff3aedf301": {
+        "ConfigureCmake": 187500,
+        "BuildNativeWithCmake": 220900,
+        "BuildNativeWithNinja": 471700
       }
     },
     "APIS": [
@@ -164,7 +157,7 @@
       "ENABLE_CPP_FUNCTION_LEVEL_INCREMENTAL": false
     },
     "CONFIG_PROPERTIES": {},
-    "TOTAL_TIME": 27567479500,
-    "BUILD_ID": "202605191502551480"
+    "TOTAL_TIME": 928248100,
+    "BUILD_ID": "202606151220017970"
   }
 }

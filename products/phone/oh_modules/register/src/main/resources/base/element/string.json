@@ -1,0 +1,12 @@
+{
+  "string": [
+    {
+      "name": "register_shared_desc",
+      "value": "register"
+    },
+    {
+      "name": "register_title",
+      "value": "Register"
+    }
+  ]
+}

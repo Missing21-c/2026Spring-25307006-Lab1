@@ -180,6 +180,141 @@
     },
     "BUILD_CACHE_DIR": ""
   },
+  "ohos-module-login": {
+    "SELECT_TARGET": "default",
+    "MODULE_BUILD_DIR": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\login\\build",
+    "TARGETS": {
+      "default": {
+        "SOURCE_ROOT": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\login\\src\\main",
+        "RESOURCES_PATH": [
+          "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\login\\src\\main\\resources"
+        ],
+        "BUILD_PATH": {
+          "OUTPUT_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\login\\build\\default\\outputs\\default",
+          "INTERMEDIA_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\login\\build\\default\\intermediates",
+          "JS_ASSETS_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\login\\build\\default\\intermediates\\loader_out\\default",
+          "JS_LITE_ASSETS_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\login\\build\\default\\intermediates\\loader_out_lite\\default",
+          "RES_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\login\\build\\default\\intermediates\\res\\default",
+          "RES_PROFILE_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\login\\build\\default\\intermediates\\res\\default\\resources\\base\\profile",
+          "ETS_SUPER_VISUAL_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\login\\build\\default\\cache\\default\\default@HarCompileArkTS\\esmodule",
+          "JS_SUPER_VISUAL_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\login\\build\\default\\cache\\default\\default@HarCompileJS\\jsbundle",
+          "WORKER_LOADER": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\login\\build\\default\\intermediates\\loader\\default\\loader.json",
+          "MANIFEST_JSON": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\login\\build\\default\\intermediates\\manifest\\default",
+          "OUTPUT_METADATA_JSON": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\login\\build\\default\\intermediates\\hap_metadata\\default\\output_metadata.json",
+          "SOURCE_MAP_DIR": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\login\\build\\default\\intermediates\\source_map\\default"
+        },
+        "BUILD_OPTION": {
+          "debuggable": true
+        }
+      }
+    },
+    "BUILD_OPTION": {
+      "default-default": {
+        "debuggable": true,
+        "copyFrom": "default"
+      }
+    },
+    "BUILD_PROFILE_OPT": {
+      "apiType": "stageMode",
+      "buildOption": {},
+      "targets": [
+        {
+          "name": "default"
+        }
+      ]
+    },
+    "BUILD_CACHE_DIR": ""
+  },
+  "ohos-module-register": {
+    "SELECT_TARGET": "default",
+    "MODULE_BUILD_DIR": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\register\\build",
+    "TARGETS": {
+      "default": {
+        "SOURCE_ROOT": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\register\\src\\main",
+        "RESOURCES_PATH": [
+          "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\register\\src\\main\\resources"
+        ],
+        "BUILD_PATH": {
+          "OUTPUT_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\register\\build\\default\\outputs\\default",
+          "INTERMEDIA_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\register\\build\\default\\intermediates",
+          "JS_ASSETS_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\register\\build\\default\\intermediates\\loader_out\\default",
+          "JS_LITE_ASSETS_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\register\\build\\default\\intermediates\\loader_out_lite\\default",
+          "RES_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\register\\build\\default\\intermediates\\res\\default",
+          "RES_PROFILE_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\register\\build\\default\\intermediates\\res\\default\\resources\\base\\profile",
+          "ETS_SUPER_VISUAL_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\register\\build\\default\\cache\\default\\default@HarCompileArkTS\\esmodule",
+          "JS_SUPER_VISUAL_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\register\\build\\default\\cache\\default\\default@HarCompileJS\\jsbundle",
+          "WORKER_LOADER": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\register\\build\\default\\intermediates\\loader\\default\\loader.json",
+          "MANIFEST_JSON": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\register\\build\\default\\intermediates\\manifest\\default",
+          "OUTPUT_METADATA_JSON": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\register\\build\\default\\intermediates\\hap_metadata\\default\\output_metadata.json",
+          "SOURCE_MAP_DIR": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\register\\build\\default\\intermediates\\source_map\\default"
+        },
+        "BUILD_OPTION": {
+          "debuggable": true
+        }
+      }
+    },
+    "BUILD_OPTION": {
+      "default-default": {
+        "debuggable": true,
+        "copyFrom": "default"
+      }
+    },
+    "BUILD_PROFILE_OPT": {
+      "apiType": "stageMode",
+      "buildOption": {},
+      "targets": [
+        {
+          "name": "default"
+        }
+      ]
+    },
+    "BUILD_CACHE_DIR": ""
+  },
+  "ohos-module-airdrop": {
+    "SELECT_TARGET": "default",
+    "MODULE_BUILD_DIR": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\build",
+    "TARGETS": {
+      "default": {
+        "SOURCE_ROOT": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main",
+        "RESOURCES_PATH": [
+          "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\resources"
+        ],
+        "BUILD_PATH": {
+          "OUTPUT_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\build\\default\\outputs\\default",
+          "INTERMEDIA_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\build\\default\\intermediates",
+          "JS_ASSETS_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\build\\default\\intermediates\\loader_out\\default",
+          "JS_LITE_ASSETS_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\build\\default\\intermediates\\loader_out_lite\\default",
+          "RES_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\build\\default\\intermediates\\res\\default",
+          "RES_PROFILE_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\build\\default\\intermediates\\res\\default\\resources\\base\\profile",
+          "ETS_SUPER_VISUAL_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\build\\default\\cache\\default\\default@HarCompileArkTS\\esmodule",
+          "JS_SUPER_VISUAL_PATH": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\build\\default\\cache\\default\\default@HarCompileJS\\jsbundle",
+          "WORKER_LOADER": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\build\\default\\intermediates\\loader\\default\\loader.json",
+          "MANIFEST_JSON": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\build\\default\\intermediates\\manifest\\default",
+          "OUTPUT_METADATA_JSON": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\build\\default\\intermediates\\hap_metadata\\default\\output_metadata.json",
+          "SOURCE_MAP_DIR": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\build\\default\\intermediates\\source_map\\default"
+        },
+        "BUILD_OPTION": {
+          "debuggable": true
+        }
+      }
+    },
+    "BUILD_OPTION": {
+      "default-default": {
+        "debuggable": true,
+        "copyFrom": "default"
+      }
+    },
+    "BUILD_PROFILE_OPT": {
+      "apiType": "stageMode",
+      "buildOption": {},
+      "targets": [
+        {
+          "name": "default"
+        }
+      ]
+    },
+    "BUILD_CACHE_DIR": ""
+  },
   "ohos-module-mediacommon": {
     "SELECT_TARGET": "default",
     "MODULE_BUILD_DIR": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\build",
@@ -426,6 +561,45 @@
         "belongProjectPath": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master"
       },
       {
+        "name": "login",
+        "srcPath": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\login",
+        "targets": [
+          {
+            "name": "default",
+            "applyToProducts": [
+              "default"
+            ]
+          }
+        ],
+        "belongProjectPath": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master"
+      },
+      {
+        "name": "register",
+        "srcPath": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\register",
+        "targets": [
+          {
+            "name": "default",
+            "applyToProducts": [
+              "default"
+            ]
+          }
+        ],
+        "belongProjectPath": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master"
+      },
+      {
+        "name": "airdrop",
+        "srcPath": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop",
+        "targets": [
+          {
+            "name": "default",
+            "applyToProducts": [
+              "default"
+            ]
+          }
+        ],
+        "belongProjectPath": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master"
+      },
+      {
         "name": "mediacommon",
         "srcPath": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon",
         "belongProjectPath": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master"
@@ -510,6 +684,42 @@
         {
           "name": "live",
           "srcPath": "./features/live",
+          "targets": [
+            {
+              "name": "default",
+              "applyToProducts": [
+                "default"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "login",
+          "srcPath": "./features/login",
+          "targets": [
+            {
+              "name": "default",
+              "applyToProducts": [
+                "default"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "register",
+          "srcPath": "./features/register",
+          "targets": [
+            {
+              "name": "default",
+              "applyToProducts": [
+                "default"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "airdrop",
+          "srcPath": "./features/airdrop",
           "targets": [
             {
               "name": "default",

@@ -31,4 +31,14 @@ export class RouterUrlConstants {
    * Music review page.
    */
   static readonly MUSIC_COMMENT: string = 'MusicCommentPage';
+
+  /**
+   * Login page.
+   */
+  static readonly LOGIN: string = 'LoginPage';
+
+  /**
+   * Register page.
+   */
+  static readonly REGISTER: string = 'RegisterPage';
 }

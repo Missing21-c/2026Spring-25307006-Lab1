@@ -39,6 +39,10 @@
     {
       "name": "reason_background",
       "value": "Allow applications to use the ability to run in the background while playing music scenes."
+    },
+    {
+      "name": "reason_internet",
+      "value": "Allow applications to access the network for music streaming and data synchronization."
     }
   ]
 }

@@ -49,31 +49,37 @@ export class TopAreaComponent extends ViewPU {
     initialRender() {
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Row.create();
-            Row.height({ "id": 134217875, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
+            Row.height({ "id": 184549523, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
             Row.width(StyleConstants.FULL_WIDTH);
             Row.justifyContent(FlexAlign.SpaceBetween);
         }, Row);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Image.create({ "id": 134218003, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
-            Image.width(this.currentBreakpoint === BreakpointConstants.BREAKPOINT_LG ? { "id": 134217832, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" } : { "id": 134217836, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
-            Image.height(this.currentBreakpoint === BreakpointConstants.BREAKPOINT_LG ? { "id": 134217832, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" } : { "id": 134217836, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
+            Image.create({ "id": 184549651, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
+            Image.width(this.currentBreakpoint === BreakpointConstants.BREAKPOINT_LG ? { "id": 184549480, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" } : { "id": 184549484, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
+            Image.height(this.currentBreakpoint === BreakpointConstants.BREAKPOINT_LG ? { "id": 184549480, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" } : { "id": 184549484, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
             Image.onClick(() => {
                 this.isShowPlay = false;
             });
         }, Image);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Image.create({ "id": 134218020, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
+            Image.create({ "id": 184549668, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
             Image.width(new BreakpointType({
-                sm: { "id": 134217836, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" },
-                md: { "id": 134217836, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" },
-                lg: { "id": 134217842, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" }
+                sm: { "id": 184549484, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" },
+                md: { "id": 184549484, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" },
+                lg: { "id": 184549490, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" }
             }).getValue(this.currentBreakpoint));
             Image.height(new BreakpointType({
-                sm: { "id": 134217836, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" },
-                md: { "id": 134217836, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" },
-                lg: { "id": 134217842, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" }
+                sm: { "id": 184549484, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" },
+                md: { "id": 184549484, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" },
+                lg: { "id": 184549490, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" }
             }).getValue(this.currentBreakpoint));
             Image.objectFit(ImageFit.Contain);
+            Image.onClick(() => {
+                this.getUIContext().getPromptAction().showToast({
+                    message: '分享功能',
+                    duration: 2000
+                });
+            });
         }, Image);
         Row.pop();
     }

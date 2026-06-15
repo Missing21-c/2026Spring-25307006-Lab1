@@ -1,0 +1,11 @@
+{
+  "module": {
+    "name": "register",
+    "type": "har",
+    "description": "$string:register_shared_desc",
+    "deviceTypes": [
+      "phone",
+      "tablet"
+    ]
+  }
+}

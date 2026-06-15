@@ -1,0 +1,15 @@
+export { AirDropPanel } from "@bundle:com.huawei.music.musichome/phone@airdrop/ets/view/AirDropPanel";
+export { AirDropButton } from "@bundle:com.huawei.music.musichome/phone@airdrop/ets/view/AirDropButton";
+export { AirDropViewModel } from "@bundle:com.huawei.music.musichome/phone@airdrop/ets/viewmodel/AirDropViewModel";
+export type { DeviceInfo, MusicInfo, TransferProgress } from './src/main/ets/viewmodel/AirDropModels';
+export type { ExtendedDeviceInfo, PendingTransferFile, TransferTask, TransferHistoryRecord, ReceiveRequest, ValidationResult, HistoryFilter } from './src/main/ets/viewmodel/TransferModels';
+export { TransferHistoryService } from "@bundle:com.huawei.music.musichome/phone@airdrop/ets/viewmodel/TransferHistoryService";
+export { FileSelectionService } from "@bundle:com.huawei.music.musichome/phone@airdrop/ets/viewmodel/FileSelectionService";
+export { DeviceTransferViewModel } from "@bundle:com.huawei.music.musichome/phone@airdrop/ets/viewmodel/DeviceTransferViewModel";
+export { NotificationService } from "@bundle:com.huawei.music.musichome/phone@airdrop/ets/viewmodel/NotificationService";
+export { DeviceListView } from "@bundle:com.huawei.music.musichome/phone@airdrop/ets/view/DeviceListView";
+export { FilePickerPanel } from "@bundle:com.huawei.music.musichome/phone@airdrop/ets/view/FilePickerPanel";
+export { TransferProgressView } from "@bundle:com.huawei.music.musichome/phone@airdrop/ets/view/TransferProgressView";
+export { ReceiveConfirmDialog } from "@bundle:com.huawei.music.musichome/phone@airdrop/ets/view/ReceiveConfirmDialog";
+export { TransferHistoryPage } from "@bundle:com.huawei.music.musichome/phone@airdrop/ets/view/TransferHistoryPage";
+export { DeviceTransferPage } from "@bundle:com.huawei.music.musichome/phone@airdrop/ets/view/DeviceTransferPage";

@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Copyright (c) 2024 Huawei Device Co., Ltd.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,6 +17,8 @@ import { BreakpointConstants, StyleConstants } from 'constantscommon';
 import { SongItem } from 'mediacommon';
 import { PlayerConstants } from '../constants/PlayerConstants';
 import { ControlAreaComponent } from './ControlAreaComponent';
+import { AirDropPanel } from 'airdrop';
+import { MusicInfo } from 'airdrop';
 
 @Preview
 @Component
@@ -27,6 +29,7 @@ export struct MusicInfoComponent {
   @StorageLink('songList') songList: SongItem[] = [];
   @StorageProp('selectIndex') selectIndex: number = 0;
   @State isShowControl: boolean = false;
+  @State isShowAirDrop: boolean = false;
 
   build() {
     GridRow({
@@ -87,6 +90,31 @@ export struct MusicInfoComponent {
   @Builder
   MusicInfo() {
     Column() {
+      // 添加AirDrop多设备传输按钮
+      Row() {
+        Button({ type: ButtonType.Circle }) {
+          Image($r('app.media.ic_music_list'))
+            .width(20)
+            .height(20)
+            .fillColor(Color.White)
+        }
+        .width(40)
+        .height(40)
+        .backgroundColor('rgba(255, 255, 255, 0.2)')
+        .onClick(() => {
+          this.isShowAirDrop = true;
+        })
+        
+        Text('多设备传输')
+          .fontSize(12)
+          .fontColor(Color.White)
+          .opacity(0.86)
+          .margin({ left: 8 })
+      }
+      .width('100%')
+      .margin({ bottom: 12 })
+      
+      // 原有的标题和歌手信息
       Flex({ justifyContent: FlexAlign.SpaceBetween, alignItems: ItemAlign.Center }) {
         Text(this.songList[this.selectIndex].title)
           .fontSize(this.currentBreakpoint === BreakpointConstants.BREAKPOINT_MD && !this.isFoldFull ?
@@ -114,5 +142,26 @@ export struct MusicInfoComponent {
         .fontWeight(FontWeight.Regular)
     }
     .margin({ top: $r('app.float.music_info_margin_top') })
+    .bindSheet($$this.isShowAirDrop, this.airDropSheetBuilder(), {
+      height: '60%',
+      backgroundColor: Color.White,
+      dragBar: true
+    })
+  }
+
+  @Builder
+  airDropSheetBuilder() {
+    AirDropPanel({
+      isShow: $isShowAirDrop,
+      musicInfo: {
+        songId: this.songList[this.selectIndex].id.toString(),
+        title: this.songList[this.selectIndex].title,
+        singer: this.songList[this.selectIndex].singer,
+        coverUrl: this.songList[this.selectIndex].src,
+        playProgress: 0,
+        duration: 0,
+        localFilePath: ''
+      } as MusicInfo
+    })
   }
 }

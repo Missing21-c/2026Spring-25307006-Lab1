@@ -26,4 +26,39 @@ export class HomeConstants {
    * Text transparency.
    */
   static readonly TEXT_OPACITY: number = 0.6;
+
+  /**
+   * Bottom bar height.
+   */
+  static readonly BOTTOM_BAR_HEIGHT: number = 72;
+
+  /**
+   * Tab icon size.
+   */
+  static readonly TAB_ICON_SIZE: number = 28;
+
+  /**
+   * Tab text size.
+   */
+  static readonly TAB_TEXT_SIZE: number = 13;
+
+  /**
+   * Tab icon margin.
+   */
+  static readonly TAB_ICON_MARGIN: number = 6;
+
+  /**
+   * Tab padding.
+   */
+  static readonly TAB_PADDING: number = 10;
+
+  /**
+   * Bottom bar background color.
+   */
+  static readonly BOTTOM_BAR_COLOR: string = '#3a3a5a';
+
+  /**
+   * Card pressed opacity.
+   */
+  static readonly CARD_PRESSED_OPACITY: number = 0.8;
 }

@@ -76,7 +76,7 @@
       "error": false
     },
     "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\index.ets": {
-      "mtimeMs": 1774434200000,
+      "mtimeMs": 1779802890520.5435,
       "children": [
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\utils\\BreakpointSystem.ets",
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\viewmodel\\MenuData.ets",
@@ -85,7 +85,13 @@
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\viewmodel\\MusicData.ets",
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\utils\\PreferencesUtil.ets",
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\utils\\Logger.ets",
-        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\utils\\ColorConversion.ets"
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\utils\\ColorConversion.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\utils\\CryptoUtil.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\utils\\HttpUtil.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\utils\\LoginStorageUtil.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\viewmodel\\UserInfo.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\utils\\FilePickerService.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\utils\\LocalMusicService.ets"
       ],
       "parent": [
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\watch\\src\\main\\ets\\view\\SongList.ets",
@@ -96,6 +102,10 @@
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\viewmodel\\SongListData.ets",
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\PlayList.ets",
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\viewmodel\\SongDataSource.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\FilePickerComponent.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\LocalFileListComponent.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\view\\AirDropPanel.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\AirDropViewModel.ets",
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\Header.ets",
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\Player.ets",
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\MusicControlComponent.ets",
@@ -105,7 +115,11 @@
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\ControlAreaComponent.ets",
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\MusicInfoComponent.ets",
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\TopAreaComponent.ets",
-        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\view\\MusicListPage.ets"
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\view\\MusicListPage.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\TransferHistoryService.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\FileSelectionService.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\DeviceTransferViewModel.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\NotificationService.ets"
       ],
       "error": false
     },
@@ -408,7 +422,20 @@
         "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.resourceschedule.backgroundTaskManager.d.ts",
         "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.notificationManager.d.ts",
         "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.notification.d.ts",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.security.cryptoFramework.d.ts",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\utils\\HttpUtil.ets",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.net.http.d.ts",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.net.connection.d.ts",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.net.socket.d.ts",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.security.cert.d.ts",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\utils\\LoginStorageUtil.ets",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.file.picker.d.ts",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.file.fs.d.ts",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.util.stream.d.ts",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.events.emitter.d.ts",
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\watch\\src\\main\\ets\\view\\VolumeSliderComponent.ets",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.abilityAccessCtrl.d.ts",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.distributedDeviceManager.d.ts",
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\Player.ets",
         "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.graphics.displaySync.d.ts",
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\MusicControlComponent.ets",
@@ -423,8 +450,6 @@
         "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\pattern_lock.d.ts",
         "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\video.d.ts",
         "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.web.webview.d.ts",
-        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.security.cert.d.ts",
-        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.security.cryptoFramework.d.ts",
         "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.print.d.ts"
       ],
       "error": false
@@ -524,9 +549,16 @@
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\utils\\SongItemBuilder.ets",
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\utils\\BackgroundUtil.ets",
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\utils\\MediaTools.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\FilePickerComponent.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\LocalFileListComponent.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\AirDropViewModel.ets",
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\Player.ets",
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\MusicControlComponent.ets",
-        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\LyricsComponent.ets"
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\LyricsComponent.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\TransferHistoryService.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\FileSelectionService.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\DeviceTransferViewModel.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\NotificationService.ets"
       ],
       "error": false
     },
@@ -673,6 +705,8 @@
         "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\application\\ExtensionContext.d.ts",
         "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\application\\AbilityStageContext.d.ts",
         "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.file.photoAccessHelper.d.ts",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.file.picker.d.ts",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.abilityAccessCtrl.d.ts",
         "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\common.d.ts",
         "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.print.d.ts"
       ],
@@ -793,6 +827,7 @@
         "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.StartOptions.d.ts",
         "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\component\\navigation.d.ts",
         "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.ability.featureAbility.d.ts",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.file.picker.d.ts",
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\watch\\src\\main\\ets\\watchability\\WatchAbility.ets",
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\Player.ets",
         "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\folder_stack.d.ts",
@@ -1706,13 +1741,89 @@
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\utils\\SongItemBuilder.ets",
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\utils\\PreferencesUtil.ets",
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\utils\\BackgroundUtil.ets",
-        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\utils\\MediaTools.ets"
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\utils\\MediaTools.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\utils\\CryptoUtil.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\utils\\HttpUtil.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\utils\\LoginStorageUtil.ets"
       ],
       "error": false
     },
     "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\utils\\ColorConversion.ets": {
       "mtimeMs": 1774434200000,
       "children": [],
+      "parent": [
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\index.ets"
+      ],
+      "error": false
+    },
+    "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\utils\\CryptoUtil.ets": {
+      "mtimeMs": 1779190291733.4116,
+      "children": [
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.security.cryptoFramework.d.ts",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.util.d.ts",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\utils\\Logger.ets"
+      ],
+      "parent": [
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\index.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\utils\\LoginStorageUtil.ets"
+      ],
+      "error": false
+    },
+    "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\utils\\HttpUtil.ets": {
+      "mtimeMs": 1779191664455.5144,
+      "children": [
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.net.http.d.ts",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\utils\\Logger.ets",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts"
+      ],
+      "parent": [
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\index.ets"
+      ],
+      "error": true,
+      "errorCodes": [
+        28007
+      ]
+    },
+    "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\utils\\LoginStorageUtil.ets": {
+      "mtimeMs": 1779191583440.7996,
+      "children": [
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.data.preferences.d.ts",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\utils\\Logger.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\utils\\CryptoUtil.ets",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts"
+      ],
+      "parent": [
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\index.ets"
+      ],
+      "error": false
+    },
+    "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\viewmodel\\UserInfo.ets": {
+      "mtimeMs": 1779190449584.8633,
+      "children": [],
+      "parent": [
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\index.ets"
+      ],
+      "error": false
+    },
+    "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\utils\\FilePickerService.ets": {
+      "mtimeMs": 1779805040312.2798,
+      "children": [
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.file.picker.d.ts",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.file.fs.d.ts"
+      ],
+      "parent": [
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\index.ets"
+      ],
+      "error": true,
+      "errorCodes": [
+        28007
+      ]
+    },
+    "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\utils\\LocalMusicService.ets": {
+      "mtimeMs": 1779805619316.4285,
+      "children": [
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.data.preferences.d.ts"
+      ],
       "parent": [
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\index.ets"
       ],
@@ -1735,6 +1846,7 @@
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\AlbumComponent.ets",
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\viewmodel\\SongListData.ets",
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\PlayList.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\LocalFileListComponent.ets",
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\Header.ets",
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\Player.ets",
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\MusicControlComponent.ets",
@@ -1771,7 +1883,7 @@
       "error": false
     },
     "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\constantscommon\\src\\main\\ets\\constants\\RouterUrlConstants.ets": {
-      "mtimeMs": 1774434200000,
+      "mtimeMs": 1779194158898.9202,
       "children": [],
       "parent": [
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\constantscommon\\index.ets"
@@ -1816,7 +1928,8 @@
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\utils\\MediaService.ets",
         "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\wantAgent\\wantAgentInfo.d.ts",
         "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimedia.avsession.d.ts",
-        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\utils\\BackgroundUtil.ets"
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\utils\\BackgroundUtil.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\NotificationService.ets"
       ],
       "error": false
     },
@@ -2089,7 +2202,10 @@
         "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\application\\BaseContext.d.ts"
       ],
       "parent": [
-        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\utils\\PreferencesUtil.ets"
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\utils\\PreferencesUtil.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\utils\\LoginStorageUtil.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\utils\\LocalMusicService.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\TransferHistoryService.ets"
       ],
       "error": false
     },
@@ -2133,7 +2249,8 @@
         "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.resourceschedule.backgroundTaskManager.d.ts",
         "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\notification\\notificationContent.d.ts",
         "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\notification\\notificationRequest.d.ts",
-        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\notification\\notificationSlot.d.ts"
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\notification\\notificationSlot.d.ts",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\NotificationService.ets"
       ],
       "error": false
     },
@@ -2238,6 +2355,122 @@
       "children": [],
       "parent": [
         "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\notification\\notificationRequest.d.ts"
+      ],
+      "error": false
+    },
+    "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.security.cryptoFramework.d.ts": {
+      "mtimeMs": 1778468331000,
+      "children": [
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts"
+      ],
+      "parent": [
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\utils\\CryptoUtil.ets",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.security.cert.d.ts"
+      ],
+      "error": false
+    },
+    "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.util.d.ts": {
+      "mtimeMs": 1778468331000,
+      "children": [],
+      "parent": [
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\utils\\CryptoUtil.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\LyricsComponent.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\lyric\\LrcUtils.ets"
+      ],
+      "error": false
+    },
+    "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.net.http.d.ts": {
+      "mtimeMs": 1778468331000,
+      "children": [
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.net.connection.d.ts"
+      ],
+      "parent": [
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\utils\\HttpUtil.ets",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.net.connection.d.ts"
+      ],
+      "error": false
+    },
+    "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.net.connection.d.ts": {
+      "mtimeMs": 1778468331000,
+      "children": [
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.net.http.d.ts",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.net.socket.d.ts"
+      ],
+      "parent": [
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.net.http.d.ts",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.net.socket.d.ts"
+      ],
+      "error": false
+    },
+    "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.net.socket.d.ts": {
+      "mtimeMs": 1778468331000,
+      "children": [
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.net.connection.d.ts",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.security.cert.d.ts"
+      ],
+      "parent": [
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.net.connection.d.ts"
+      ],
+      "error": false
+    },
+    "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.security.cert.d.ts": {
+      "mtimeMs": 1778468331000,
+      "children": [
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.security.cryptoFramework.d.ts"
+      ],
+      "parent": [
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.net.socket.d.ts",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.web.webview.d.ts"
+      ],
+      "error": false
+    },
+    "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.file.picker.d.ts": {
+      "mtimeMs": 1778468331000,
+      "children": [
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\application\\Context.d.ts",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.window.d.ts"
+      ],
+      "parent": [
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\utils\\FilePickerService.ets"
+      ],
+      "error": false
+    },
+    "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.file.fs.d.ts": {
+      "mtimeMs": 1778468331000,
+      "children": [
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.util.stream.d.ts"
+      ],
+      "parent": [
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\src\\main\\ets\\utils\\FilePickerService.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\AirDropViewModel.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\FileSelectionService.ets"
+      ],
+      "error": false
+    },
+    "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.util.stream.d.ts": {
+      "mtimeMs": 1778468331000,
+      "children": [
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.events.emitter.d.ts"
+      ],
+      "parent": [
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.file.fs.d.ts"
+      ],
+      "error": false
+    },
+    "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.events.emitter.d.ts": {
+      "mtimeMs": 1778468331000,
+      "children": [
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts"
+      ],
+      "parent": [
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.util.stream.d.ts"
       ],
       "error": false
     },
@@ -2383,12 +2616,13 @@
       "error": false
     },
     "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\Header.ets": {
-      "mtimeMs": 1774434200000,
+      "mtimeMs": 1781488037795.3325,
       "children": [
         "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.promptAction.d.ts",
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\index.ets",
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\constantscommon\\index.ets",
-        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\constants\\HeaderConstants.ets"
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\constants\\HeaderConstants.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\Index.ets"
       ],
       "parent": [
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\Index.ets",
@@ -2416,7 +2650,7 @@
       "error": false
     },
     "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\view\\MusicListPage.ets": {
-      "mtimeMs": 1774434200000,
+      "mtimeMs": 1779793200077.335,
       "children": [
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\index.ets",
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\constantscommon\\index.ets",
@@ -2455,12 +2689,14 @@
       "error": false
     },
     "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\PlayList.ets": {
-      "mtimeMs": 1774434200000,
+      "mtimeMs": 1780996223937.2046,
       "children": [
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\constantscommon\\index.ets",
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\index.ets",
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\viewmodel\\SongDataSource.ets",
-        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\constants\\ContentConstants.ets"
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\constants\\ContentConstants.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\FilePickerComponent.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\LocalFileListComponent.ets"
       ],
       "parent": [
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\ListContent.ets"
@@ -2496,6 +2732,174 @@
       ],
       "parent": [
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\PlayList.ets"
+      ],
+      "error": false
+    },
+    "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\FilePickerComponent.ets": {
+      "mtimeMs": 1780997241353.2202,
+      "children": [
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\index.ets",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.abilityAccessCtrl.d.ts",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.common.d.ts"
+      ],
+      "parent": [
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\PlayList.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\LocalFileListComponent.ets"
+      ],
+      "error": true,
+      "errorCodes": [
+        28040
+      ]
+    },
+    "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\LocalFileListComponent.ets": {
+      "mtimeMs": 1780998460291.9934,
+      "children": [
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\index.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\constantscommon\\index.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\FilePickerComponent.ets",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.abilityAccessCtrl.d.ts",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.common.d.ts",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\Index.ets"
+      ],
+      "parent": [
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\PlayList.ets"
+      ],
+      "error": true,
+      "errorCodes": [
+        28040
+      ]
+    },
+    "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.abilityAccessCtrl.d.ts": {
+      "mtimeMs": 1778468331000,
+      "children": [
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\permissions.d.ts",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\application\\Context.d.ts",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\security\\PermissionRequestResult.d.ts"
+      ],
+      "parent": [
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\FilePickerComponent.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\LocalFileListComponent.ets"
+      ],
+      "error": false
+    },
+    "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\permissions.d.ts": {
+      "mtimeMs": 1778468331000,
+      "children": [],
+      "parent": [
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.abilityAccessCtrl.d.ts"
+      ],
+      "error": false
+    },
+    "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\security\\PermissionRequestResult.d.ts": {
+      "mtimeMs": 1778468331000,
+      "children": [],
+      "parent": [
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.abilityAccessCtrl.d.ts"
+      ],
+      "error": false
+    },
+    "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\Index.ets": {
+      "mtimeMs": 1781455065855.8018,
+      "children": [
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\view\\AirDropPanel.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\view\\AirDropButton.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\AirDropViewModel.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\AirDropModels.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\TransferModels.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\TransferHistoryService.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\FileSelectionService.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\DeviceTransferViewModel.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\NotificationService.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\view\\DeviceListView.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\view\\FilePickerPanel.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\view\\TransferProgressView.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\view\\ReceiveConfirmDialog.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\view\\TransferHistoryPage.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\view\\DeviceTransferPage.ets"
+      ],
+      "parent": [
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\LocalFileListComponent.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\ControlAreaComponent.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\MusicInfoComponent.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\Header.ets"
+      ],
+      "error": false
+    },
+    "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\view\\AirDropPanel.ets": {
+      "mtimeMs": 1780462419172.8303,
+      "children": [
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\index.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\AirDropViewModel.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\AirDropModels.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\constants\\AirDropConstants.ets"
+      ],
+      "parent": [
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\Index.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\view\\AirDropButton.ets"
+      ],
+      "error": false
+    },
+    "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\view\\AirDropButton.ets": {
+      "mtimeMs": 1780393678971.11,
+      "children": [
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\AirDropModels.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\view\\AirDropPanel.ets"
+      ],
+      "parent": [
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\Index.ets"
+      ],
+      "error": false
+    },
+    "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\AirDropViewModel.ets": {
+      "mtimeMs": 1780999017195.3638,
+      "children": [
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\index.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\AirDropModels.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\constants\\AirDropConstants.ets",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.distributedDeviceManager.d.ts",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.file.fs.d.ts",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.common.d.ts"
+      ],
+      "parent": [
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\Index.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\view\\AirDropPanel.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\DeviceTransferViewModel.ets"
+      ],
+      "error": true,
+      "errorCodes": [
+        28007
+      ]
+    },
+    "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\AirDropModels.ets": {
+      "mtimeMs": 1780393519958.196,
+      "children": [],
+      "parent": [
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\Index.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\view\\AirDropPanel.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\AirDropViewModel.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\view\\AirDropButton.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\TransferModels.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\DeviceTransferViewModel.ets"
+      ],
+      "error": false
+    },
+    "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\constants\\AirDropConstants.ets": {
+      "mtimeMs": 1780393540014.4775,
+      "children": [],
+      "parent": [
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\view\\AirDropPanel.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\AirDropViewModel.ets"
+      ],
+      "error": false
+    },
+    "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.distributedDeviceManager.d.ts": {
+      "mtimeMs": 1778468331000,
+      "children": [
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts"
+      ],
+      "parent": [
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\AirDropViewModel.ets"
       ],
       "error": false
     },
@@ -2603,12 +3007,14 @@
       "error": false
     },
     "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\MusicInfoComponent.ets": {
-      "mtimeMs": 1774434200000,
+      "mtimeMs": 1781003913579.5679,
       "children": [
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\constantscommon\\index.ets",
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\index.ets",
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\constants\\PlayerConstants.ets",
-        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\ControlAreaComponent.ets"
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\ControlAreaComponent.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\Index.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\Index.ets"
       ],
       "parent": [
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\MusicControlComponent.ets"
@@ -2616,11 +3022,13 @@
       "error": false
     },
     "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\ControlAreaComponent.ets": {
-      "mtimeMs": 1774434200000,
+      "mtimeMs": 1780393807313.6252,
       "children": [
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\constantscommon\\index.ets",
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\index.ets",
-        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\constants\\PlayerConstants.ets"
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\constants\\PlayerConstants.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\Index.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\Index.ets"
       ],
       "parent": [
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\MusicControlComponent.ets",
@@ -2630,22 +3038,13 @@
       "error": false
     },
     "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\TopAreaComponent.ets": {
-      "mtimeMs": 1774434200000,
+      "mtimeMs": 1779799703760.6875,
       "children": [
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\constantscommon\\index.ets",
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\index.ets"
       ],
       "parent": [
         "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\MusicControlComponent.ets"
-      ],
-      "error": false
-    },
-    "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.util.d.ts": {
-      "mtimeMs": 1778468331000,
-      "children": [],
-      "parent": [
-        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\components\\LyricsComponent.ets",
-        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist\\src\\main\\ets\\lyric\\LrcUtils.ets"
       ],
       "error": false
     },
@@ -3136,17 +3535,6 @@
       "parent": [],
       "error": false
     },
-    "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.security.cert.d.ts": {
-      "mtimeMs": 1778468331000,
-      "children": [
-        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts",
-        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.security.cryptoFramework.d.ts"
-      ],
-      "parent": [
-        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.web.webview.d.ts"
-      ],
-      "error": false
-    },
     "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.print.d.ts": {
       "mtimeMs": 1778468331000,
       "children": [
@@ -3166,15 +3554,165 @@
       ],
       "error": false
     },
-    "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.security.cryptoFramework.d.ts": {
-      "mtimeMs": 1778468331000,
+    "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\TransferModels.ets": {
+      "mtimeMs": 1781454373741.0366,
       "children": [
-        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts"
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\AirDropModels.ets"
       ],
       "parent": [
-        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.security.cert.d.ts"
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\Index.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\TransferHistoryService.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\FileSelectionService.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\DeviceTransferViewModel.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\NotificationService.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\view\\DeviceListView.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\view\\FilePickerPanel.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\view\\TransferProgressView.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\view\\ReceiveConfirmDialog.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\view\\TransferHistoryPage.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\view\\DeviceTransferPage.ets"
       ],
       "error": false
+    },
+    "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\TransferHistoryService.ets": {
+      "mtimeMs": 1781486869851.9724,
+      "children": [
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\index.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\TransferModels.ets",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.data.preferences.d.ts",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.common.d.ts"
+      ],
+      "parent": [
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\Index.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\DeviceTransferViewModel.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\view\\TransferHistoryPage.ets"
+      ],
+      "error": false
+    },
+    "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\FileSelectionService.ets": {
+      "mtimeMs": 1781454484249.6213,
+      "children": [
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\index.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\TransferModels.ets",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.file.fs.d.ts",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.common.d.ts"
+      ],
+      "parent": [
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\Index.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\DeviceTransferViewModel.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\view\\FilePickerPanel.ets"
+      ],
+      "error": false
+    },
+    "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\DeviceTransferViewModel.ets": {
+      "mtimeMs": 1781491352574.7854,
+      "children": [
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\index.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\AirDropViewModel.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\TransferHistoryService.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\FileSelectionService.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\TransferModels.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\AirDropModels.ets",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.common.d.ts"
+      ],
+      "parent": [
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\Index.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\view\\DeviceTransferPage.ets"
+      ],
+      "error": false
+    },
+    "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\NotificationService.ets": {
+      "mtimeMs": 1781492181234.997,
+      "children": [
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon\\index.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\TransferModels.ets",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.notificationManager.d.ts",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.wantAgent.d.ts",
+        "D:\\kaiyuan\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.common.d.ts"
+      ],
+      "parent": [
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\Index.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\view\\DeviceTransferPage.ets"
+      ],
+      "error": false
+    },
+    "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\view\\DeviceListView.ets": {
+      "mtimeMs": 1781488016853.917,
+      "children": [
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\TransferModels.ets"
+      ],
+      "parent": [
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\Index.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\view\\DeviceTransferPage.ets"
+      ],
+      "error": false
+    },
+    "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\view\\FilePickerPanel.ets": {
+      "mtimeMs": 1781454744676.871,
+      "children": [
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\TransferModels.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\FileSelectionService.ets"
+      ],
+      "parent": [
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\Index.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\view\\DeviceTransferPage.ets"
+      ],
+      "error": false
+    },
+    "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\view\\TransferProgressView.ets": {
+      "mtimeMs": 1781454814718.042,
+      "children": [
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\TransferModels.ets"
+      ],
+      "parent": [
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\Index.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\view\\DeviceTransferPage.ets"
+      ],
+      "error": false
+    },
+    "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\view\\ReceiveConfirmDialog.ets": {
+      "mtimeMs": 1781487903467.747,
+      "children": [
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\TransferModels.ets"
+      ],
+      "parent": [
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\Index.ets"
+      ],
+      "error": false
+    },
+    "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\view\\TransferHistoryPage.ets": {
+      "mtimeMs": 1781454948390.4124,
+      "children": [
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\TransferModels.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\TransferHistoryService.ets"
+      ],
+      "parent": [
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\Index.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\view\\DeviceTransferPage.ets"
+      ],
+      "error": true,
+      "errorCodes": [
+        28007
+      ]
+    },
+    "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\view\\DeviceTransferPage.ets": {
+      "mtimeMs": 1781491312268.5337,
+      "children": [
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\view\\DeviceListView.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\view\\FilePickerPanel.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\view\\TransferProgressView.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\view\\TransferHistoryPage.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\DeviceTransferViewModel.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\NotificationService.ets",
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\src\\main\\ets\\viewmodel\\TransferModels.ets"
+      ],
+      "parent": [
+        "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop\\Index.ets"
+      ],
+      "error": true,
+      "errorCodes": [
+        28007
+      ]
     }
   }
 }

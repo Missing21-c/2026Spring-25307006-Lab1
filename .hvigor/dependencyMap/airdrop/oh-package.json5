@@ -1,0 +1,1 @@
+{"name":"airdrop","version":"1.0.0","description":"设备间隔空投送功能模块","main":"Index.ets","author":"","license":"Apache-2.0","dependencies":{"mediacommon":"file:../../common/mediacommon","constantscommon":"file:../../common/constantscommon"}}

@@ -53,8 +53,8 @@ export class PlayList extends ViewPU {
         this.innerSelectedIndex = 0;
         this.wearableSwiperController = new ArcSwiperController();
         this.playList = [
-            new PlayListSheet({ "id": 134217739, "type": 10003, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" }, { "id": 134217781, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" }, { "id": 134217741, "type": 10003, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" }),
-            new PlayListSheet({ "id": 134217740, "type": 10003, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" }, { "id": 134217782, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" }, { "id": 134217742, "type": 10003, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" })
+            new PlayListSheet({ "id": 184549387, "type": 10003, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" }, { "id": 184549429, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" }, { "id": 184549389, "type": 10003, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" }),
+            new PlayListSheet({ "id": 184549388, "type": 10003, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" }, { "id": 184549430, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" }, { "id": 184549390, "type": 10003, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" })
         ];
         this.setInitiallyProvidedValue(params);
         this.finalizeConstruction();
@@ -169,7 +169,7 @@ export class PlayList extends ViewPU {
                             Column.backgroundImage(item.background, ImageRepeat.NoRepeat);
                             Column.backgroundImageSize({ width: StyleConstants.FULL_WIDTH, height: StyleConstants.FULL_HEIGHT });
                             Column.justifyContent(FlexAlign.SpaceBetween);
-                            Column.padding({ top: { "id": 134217767, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" }, bottom: { "id": 134217767, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" } });
+                            Column.padding({ top: { "id": 184549415, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" }, bottom: { "id": 184549415, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" } });
                             Column.onClick(() => {
                                 this.pageStack.replacePathByName('songList', null);
                             });
@@ -180,20 +180,20 @@ export class PlayList extends ViewPU {
                         this.observeComponentCreation2((elmtId, isInitialRender) => {
                             Text.create(item.name);
                             Text.fontWeight(FontWeight.Bold);
-                            Text.fontColor({ "id": 134217743, "type": 10001, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
-                            Text.fontSize({ "id": 134217753, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
+                            Text.fontColor({ "id": 184549391, "type": 10001, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
+                            Text.fontSize({ "id": 184549401, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
                         }, Text);
                         Text.pop();
                         this.observeComponentCreation2((elmtId, isInitialRender) => {
-                            Image.create({ "id": 134217771, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
-                            Image.width({ "id": 134217754, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
-                            Image.margin({ left: { "id": 134217766, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" } });
+                            Image.create({ "id": 184549419, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
+                            Image.width({ "id": 184549402, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
+                            Image.margin({ left: { "id": 184549414, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" } });
                         }, Image);
                         Row.pop();
                         this.observeComponentCreation2((elmtId, isInitialRender) => {
-                            Image.create({ "id": 134217780, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
-                            Image.width({ "id": 134217763, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
-                            Image.height({ "id": 134217763, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
+                            Image.create({ "id": 184549428, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
+                            Image.width({ "id": 184549411, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
+                            Image.height({ "id": 184549411, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
                             Image.position({ x: '25%', y: '65%' });
                         }, Image);
                         this.observeComponentCreation2((elmtId, isInitialRender) => {

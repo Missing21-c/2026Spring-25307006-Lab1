@@ -103,19 +103,35 @@ struct Index {
    * 处理退出登录
    */
   private async handleLogout(): Promise<void> {
-    await LoginViewModel.clearLoginInfo();
-    this.userInfo = undefined;
-    this.isLoggedIn = false;
+    try {
+      await LoginViewModel.clearLoginInfo();
+      this.userInfo = undefined;
+      this.isLoggedIn = false;
 
-    // 显示提示
-    const uiContext = AppStorage.get<UIContext>('uiContext');
-    if (uiContext) {
-      const promptAction = uiContext.getPromptAction();
-      promptAction.showToast({
-        message: '已退出登录',
-        duration: 2000
-      });
+      // 显示提示
+      const uiContext = AppStorage.get<UIContext>('uiContext');
+      if (uiContext) {
+        const promptAction = uiContext.getPromptAction();
+        promptAction.showToast({
+          message: '已退出登录',
+          duration: 2000
+        });
+      }
+    } catch (error) {
+      console.error('Logout failed:', error);
     }
+  }
+
+  /**
+   * 根据功能URL获取对应的底部栏图标资源
+   */
+  private getTabIcon(url: string): Resource {
+    if (url === RouterUrlConstants.MUSIC_LIST) {
+      return $r('app.media.ic_music_icon');
+    } else if (url === RouterUrlConstants.LIVE) {
+      return $r('app.media.ic_live');
+    }
+    return $r('app.media.ic_music');
   }
 
   @Builder
@@ -231,33 +247,7 @@ struct Index {
                       Text(item.title)
                         .fontSize($r('app.float.title_font_size'))
                         .fontColor(Color.White)
-                      Text(item.description)
-                        .fontSize($r('app.float.description_font_size'))
-                        .opacity(HomeConstants.TEXT_OPACITY)
-                        .fontColor(Color.White)
-                        .margin({
-                          top: $r('app.float.description_margin_top')
-                        })
                       Blank()
-                      Column() {
-                        Button() {
-                          Text(item.button)
-                            .fontSize($r('app.float.button_font_size'))
-                            .fontColor(Color.White)
-                        }
-                        .backgroundColor($r('app.color.button_background_color'))
-                        .borderRadius($r('app.float.button_border_radius'))
-                        .width($r('app.float.button_width'))
-                        .height($r('app.float.button_height'))
-                        .margin({
-                          top: $r('app.float.description_margin_top')
-                        })
-                        .onClick(() => {
-                          this.pageIndexInfos.pushPathByName(item.url, null);
-                        })
-                      }
-                      .alignItems(HorizontalAlign.End)
-                      .width(StyleConstants.FULL_WIDTH)
                     }
                     .width(StyleConstants.FULL_WIDTH)
                     .padding($r('app.float.item_padding'))
@@ -266,6 +256,17 @@ struct Index {
                     .borderRadius($r('app.float.item_border_radius'))
                     .backgroundImage(item.icon)
                     .backgroundImageSize(ImageSize.Cover)
+                    .onClick(() => {
+                      this.pageIndexInfos.pushPathByName(item.url, null);
+                    })
+                    .stateStyles({
+                      normal: {
+                        .opacity(1)
+                      },
+                      pressed: {
+                        .opacity(HomeConstants.CARD_PRESSED_OPACITY)
+                      }
+                    })
                   }, (item: IndexItem, index?: number) => index + JSON.stringify(item))
                 }
               }
@@ -273,7 +274,7 @@ struct Index {
             .padding({
               left: $r('app.float.column_padding_left'),
               right: $r('app.float.column_padding_right'),
-              bottom: 100
+              bottom: 16
             })
           }
           .width('100%')
@@ -283,32 +284,38 @@ struct Index {
 
         // 底部区域：功能按钮（排除评论）
         Row() {
-          ForEach(this.indexItemList.filter((item: IndexItem) => item.url !== RouterUrlConstants.MUSIC_COMMENT), (item: IndexItem) => {
-            Column() {
-              Image($r('app.media.ic_music'))
-                .width(28)
-                .height(28)
-                .margin({ bottom: 6 })
+          ForEach(this.indexItemList.filter((item: IndexItem) => item.url !== RouterUrlConstants.MUSIC_COMMENT),
+            (item: IndexItem) => {
+              Column() {
+                Image(this.getTabIcon(item.url))
+                  .width(HomeConstants.TAB_ICON_SIZE)
+                  .height(HomeConstants.TAB_ICON_SIZE)
+                  .margin({ bottom: HomeConstants.TAB_ICON_MARGIN })
 
-              Text(item.title)
-                .fontSize(13)
-                .fontColor(Color.White)
-            }
-            .layoutWeight(1)
-            .padding({ top: 12, bottom: 12 })
-            .onClick(() => {
-              this.pageIndexInfos.pushPathByName(item.url, null);
-            })
-          })
+                Text(item.title)
+                  .fontSize(HomeConstants.TAB_TEXT_SIZE)
+                  .fontColor(Color.White)
+              }
+              .layoutWeight(1)
+              .padding({
+                top: HomeConstants.TAB_PADDING,
+                bottom: HomeConstants.TAB_PADDING
+              })
+              .onClick(() => {
+                this.pageIndexInfos.pushPathByName(item.url, null);
+              })
+            }, (item: IndexItem, index?: number) => index + JSON.stringify(item))
         }
-        .width('100%')
-        .height(80)
-        .backgroundColor('#3a3a5a')
+        .width(StyleConstants.FULL_WIDTH)
+        .height(HomeConstants.BOTTOM_BAR_HEIGHT)
+        .backgroundColor(HomeConstants.BOTTOM_BAR_COLOR)
         .justifyContent(FlexAlign.SpaceEvenly)
+        .margin({ bottom: 0 })
       }
       .width('100%')
       .height('100%')
       .margin({ top: this.getUIContext().px2vp(this.topRectHeight) })
+      .expandSafeArea([SafeAreaType.SYSTEM])
     }
     .mode(NavigationMode.Stack)
     .navDestination(this.PagesMap)

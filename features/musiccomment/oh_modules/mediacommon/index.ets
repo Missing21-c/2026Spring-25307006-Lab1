@@ -21,3 +21,11 @@ export { MusicPlayMode } from './src/main/ets/viewmodel/MusicData';
 export { PreferencesUtil } from './src/main/ets/utils/PreferencesUtil';
 export { Logger } from './src/main/ets/utils/Logger';
 export { ColorConversion } from './src/main/ets/utils/ColorConversion';
+// 登录功能相关导出
+export { CryptoUtil } from './src/main/ets/utils/CryptoUtil';
+export { HttpUtil, HttpResponse } from './src/main/ets/utils/HttpUtil';
+export { LoginStorageUtil, LoginStorageKeys, UserInfo, SavedLoginInfo, LoginLimitResult } from './src/main/ets/utils/LoginStorageUtil';
+export { UserInfo as UserInfoModel, createDefaultUserInfo, isValidUserInfo } from './src/main/ets/viewmodel/UserInfo';
+// MP3文件选择功能相关导出
+export { FilePickerService, FileObject } from './src/main/ets/utils/FilePickerService';
+export { LocalMusicService, LocalFile } from './src/main/ets/utils/LocalMusicService';

@@ -64,7 +64,7 @@ export class Content extends ViewPU {
         }, GridRow);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             GridCol.create({ span: { sm: GridConstants.SPAN_TWELVE, md: GridConstants.SPAN_SIX, lg: GridConstants.SPAN_FOUR } });
-            GridCol.backgroundColor({ "id": 134217805, "type": 10001, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
+            GridCol.backgroundColor({ "id": 184549453, "type": 10001, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
         }, GridCol);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             __Common__.create();
@@ -91,7 +91,7 @@ export class Content extends ViewPU {
         GridCol.pop();
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             GridCol.create({ span: { sm: GridConstants.SPAN_TWELVE, md: GridConstants.SPAN_SIX, lg: GridConstants.SPAN_EIGHT } });
-            GridCol.borderRadius({ "id": 134217946, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
+            GridCol.borderRadius({ "id": 184549594, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
         }, GridCol);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             __Common__.create();

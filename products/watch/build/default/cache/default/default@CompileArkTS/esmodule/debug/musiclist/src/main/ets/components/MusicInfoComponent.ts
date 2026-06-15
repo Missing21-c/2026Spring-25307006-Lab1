@@ -8,11 +8,14 @@ interface MusicInfoComponent_Params {
     songList?: SongItem[];
     selectIndex?: number;
     isShowControl?: boolean;
+    isShowAirDrop?: boolean;
 }
 import { BreakpointConstants, StyleConstants } from "@bundle:com.huawei.music.musichome/watch@constantscommon/index";
 import type { SongItem } from 'mediacommon';
 import { PlayerConstants } from "@bundle:com.huawei.music.musichome/watch@musiclist/ets/constants/PlayerConstants";
 import { ControlAreaComponent } from "@bundle:com.huawei.music.musichome/watch@musiclist/ets/components/ControlAreaComponent";
+import { AirDropPanel } from "@bundle:com.huawei.music.musichome/watch@airdrop/Index";
+import type { MusicInfo } from "@bundle:com.huawei.music.musichome/watch@airdrop/Index";
 export class MusicInfoComponent extends ViewPU {
     constructor(parent, params, __localStorage, elmtId = -1, paramsLambda = undefined, extraInfo) {
         super(parent, __localStorage, elmtId, extraInfo);
@@ -25,6 +28,7 @@ export class MusicInfoComponent extends ViewPU {
         this.__songList = this.createStorageLink('songList', [], "songList");
         this.__selectIndex = this.createStorageProp('selectIndex', 0, "selectIndex");
         this.__isShowControl = new ObservedPropertySimplePU(false, this, "isShowControl");
+        this.__isShowAirDrop = new ObservedPropertySimplePU(false, this, "isShowAirDrop");
         this.setInitiallyProvidedValue(params);
         this.finalizeConstruction();
     }
@@ -34,6 +38,9 @@ export class MusicInfoComponent extends ViewPU {
         }
         if (params.isShowControl !== undefined) {
             this.isShowControl = params.isShowControl;
+        }
+        if (params.isShowAirDrop !== undefined) {
+            this.isShowAirDrop = params.isShowAirDrop;
         }
     }
     updateStateVars(params: MusicInfoComponent_Params) {
@@ -45,6 +52,7 @@ export class MusicInfoComponent extends ViewPU {
         this.__songList.purgeDependencyOnElmtId(rmElmtId);
         this.__selectIndex.purgeDependencyOnElmtId(rmElmtId);
         this.__isShowControl.purgeDependencyOnElmtId(rmElmtId);
+        this.__isShowAirDrop.purgeDependencyOnElmtId(rmElmtId);
     }
     aboutToBeDeleted() {
         this.__currentTabIndex.aboutToBeDeleted();
@@ -53,6 +61,7 @@ export class MusicInfoComponent extends ViewPU {
         this.__songList.aboutToBeDeleted();
         this.__selectIndex.aboutToBeDeleted();
         this.__isShowControl.aboutToBeDeleted();
+        this.__isShowAirDrop.aboutToBeDeleted();
         SubscriberManager.Get().delete(this.id__());
         this.aboutToBeDeletedInternal();
     }
@@ -98,6 +107,13 @@ export class MusicInfoComponent extends ViewPU {
     set isShowControl(newValue: boolean) {
         this.__isShowControl.set(newValue);
     }
+    private __isShowAirDrop: ObservedPropertySimplePU<boolean>;
+    get isShowAirDrop() {
+        return this.__isShowAirDrop.get();
+    }
+    set isShowAirDrop(newValue: boolean) {
+        this.__isShowAirDrop.set(newValue);
+    }
     initialRender() {
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             GridRow.create({
@@ -137,7 +153,7 @@ export class MusicInfoComponent extends ViewPU {
         {
             this.observeComponentCreation2((elmtId, isInitialRender) => {
                 if (isInitialRender) {
-                    let componentCall = new ControlAreaComponent(this, {}, undefined, elmtId, () => { }, { page: "features/musiclist/src/main/ets/components/MusicInfoComponent.ets", line: 57, col: 11 });
+                    let componentCall = new ControlAreaComponent(this, {}, undefined, elmtId, () => { }, { page: "features/musiclist/src/main/ets/components/MusicInfoComponent.ets", line: 60, col: 11 });
                     ViewPU.create(componentCall);
                     let paramsLambda = () => {
                         return {};
@@ -165,28 +181,70 @@ export class MusicInfoComponent extends ViewPU {
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Image.create(this.songList[this.selectIndex].label);
             Image.aspectRatio(1);
-            Image.borderRadius({ "id": 134217860, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
+            Image.borderRadius({ "id": 184549508, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
             Image.shadow({
-                radius: { "id": 134217947, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" },
-                color: { "id": 134217814, "type": 10001, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" },
+                radius: { "id": 184549595, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" },
+                color: { "id": 184549462, "type": 10001, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" },
                 offsetX: 0,
                 offsetY: 8
             });
-            Image.margin({ "id": 134217914, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
+            Image.margin({ "id": 184549562, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
         }, Image);
         Row.pop();
     }
     MusicInfo(parent = null) {
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Column.create();
-            Column.margin({ top: { "id": 134217923, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" } });
+            Column.margin({ top: { "id": 184549571, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" } });
+            Column.bindSheet({ value: this.isShowAirDrop, changeEvent: newValue => { this.isShowAirDrop = newValue; } }, { builder: () => {
+                    this.airDropSheetBuilder.call(this);
+                } }, {
+                height: '60%',
+                backgroundColor: Color.White,
+                dragBar: true
+            });
         }, Column);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
+            // 添加AirDrop多设备传输按钮
+            Row.create();
+            // 添加AirDrop多设备传输按钮
+            Row.width('100%');
+            // 添加AirDrop多设备传输按钮
+            Row.margin({ bottom: 12 });
+        }, Row);
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            Button.createWithChild({ type: ButtonType.Circle });
+            Button.width(40);
+            Button.height(40);
+            Button.backgroundColor('rgba(255, 255, 255, 0.2)');
+            Button.onClick(() => {
+                this.isShowAirDrop = true;
+            });
+        }, Button);
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            Image.create({ "id": 184549667, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
+            Image.width(20);
+            Image.height(20);
+            Image.fillColor(Color.White);
+        }, Image);
+        Button.pop();
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            Text.create('多设备传输');
+            Text.fontSize(12);
+            Text.fontColor(Color.White);
+            Text.opacity(0.86);
+            Text.margin({ left: 8 });
+        }, Text);
+        Text.pop();
+        // 添加AirDrop多设备传输按钮
+        Row.pop();
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            // 原有的标题和歌手信息
             Flex.create({ justifyContent: FlexAlign.SpaceBetween, alignItems: ItemAlign.Center });
         }, Flex);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Text.create(this.songList[this.selectIndex].title);
-            Text.fontSize(this.currentBreakpoint === BreakpointConstants.BREAKPOINT_MD && !this.isFoldFull ? { "id": 134217974, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" } : { "id": 134217973, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
+            Text.fontSize(this.currentBreakpoint === BreakpointConstants.BREAKPOINT_MD && !this.isFoldFull ? { "id": 184549622, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" } : { "id": 184549621, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
             Text.fontColor(Color.White);
             Text.opacity(0.86);
             Text.fontWeight(FontWeight.Bold);
@@ -194,26 +252,76 @@ export class MusicInfoComponent extends ViewPU {
         }, Text);
         Text.pop();
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Image.create({ "id": 134218030, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
-            Image.width({ "id": 134217894, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
-            Image.height({ "id": 134217894, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
+            Image.create({ "id": 184549678, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
+            Image.width({ "id": 184549542, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
+            Image.height({ "id": 184549542, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
             Image.objectFit(ImageFit.Contain);
             Image.fillColor(Color.White);
             Image.opacity(0.86);
         }, Image);
+        // 原有的标题和歌手信息
         Flex.pop();
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Text.create(this.songList[this.selectIndex].singer);
             Text.textAlign(TextAlign.Start);
-            Text.fontSize(this.currentBreakpoint === BreakpointConstants.BREAKPOINT_MD && !this.isFoldFull ? { "id": 134217973, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" } : { "id": 134217864, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
-            Text.fontColor({ "id": 134217811, "type": 10001, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
+            Text.fontSize(this.currentBreakpoint === BreakpointConstants.BREAKPOINT_MD && !this.isFoldFull ? { "id": 184549621, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" } : { "id": 184549512, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
+            Text.fontColor({ "id": 184549459, "type": 10001, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
             Text.fontFamily(PlayerConstants.FONT_FAMILY_BLACK);
-            Text.margin({ top: { "id": 134217924, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" } });
+            Text.margin({ top: { "id": 184549572, "type": 10002, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" } });
             Text.width(StyleConstants.FULL_WIDTH);
             Text.fontWeight(FontWeight.Regular);
         }, Text);
         Text.pop();
         Column.pop();
+    }
+    airDropSheetBuilder(parent = null) {
+        {
+            this.observeComponentCreation2((elmtId, isInitialRender) => {
+                if (isInitialRender) {
+                    let componentCall = new AirDropPanel(this, {
+                        isShow: this.__isShowAirDrop,
+                        musicInfo: {
+                            songId: this.songList[this.selectIndex].id.toString(),
+                            title: this.songList[this.selectIndex].title,
+                            singer: this.songList[this.selectIndex].singer,
+                            coverUrl: this.songList[this.selectIndex].src,
+                            playProgress: 0,
+                            duration: 0,
+                            localFilePath: ''
+                        } as MusicInfo
+                    }, undefined, elmtId, () => { }, { page: "features/musiclist/src/main/ets/components/MusicInfoComponent.ets", line: 154, col: 5 });
+                    ViewPU.create(componentCall);
+                    let paramsLambda = () => {
+                        return {
+                            isShow: this.isShowAirDrop,
+                            musicInfo: {
+                                songId: this.songList[this.selectIndex].id.toString(),
+                                title: this.songList[this.selectIndex].title,
+                                singer: this.songList[this.selectIndex].singer,
+                                coverUrl: this.songList[this.selectIndex].src,
+                                playProgress: 0,
+                                duration: 0,
+                                localFilePath: ''
+                            } as MusicInfo
+                        };
+                    };
+                    componentCall.paramsGenerator_ = paramsLambda;
+                }
+                else {
+                    this.updateStateVarsOfChildByElmtId(elmtId, {
+                        musicInfo: {
+                            songId: this.songList[this.selectIndex].id.toString(),
+                            title: this.songList[this.selectIndex].title,
+                            singer: this.songList[this.selectIndex].singer,
+                            coverUrl: this.songList[this.selectIndex].src,
+                            playProgress: 0,
+                            duration: 0,
+                            localFilePath: ''
+                        } as MusicInfo
+                    });
+                }
+            }, { name: "AirDropPanel" });
+        }
     }
     rerender() {
         this.updateDirtyElements();

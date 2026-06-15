@@ -31,11 +31,11 @@ export class SongItem {
     /**
      * Music logo information.
      */
-    mark: Resource = { "id": 134218043, "type": 10003, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" };
+    mark: Resource = { "id": 184549691, "type": 10003, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" };
     /**
      * Music avatar information.
      */
-    label: Resource = { "id": 134218043, "type": 10003, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" };
+    label: Resource = { "id": 184549691, "type": 10003, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" };
     /**
      * Music file path information.
      */

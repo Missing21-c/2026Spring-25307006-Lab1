@@ -8,8 +8,12 @@
   "version": "1.0.0",
   "dependencies": {
     "constantscommon": "file:../../common/constantscommon",
+    "mediacommon": "file:../../common/mediacommon",
     "live": "file:../../features/live",
+    "login": "file:../../features/login",
+    "register": "file:../../features/register",
     "musiccomment": "file:../../features/musiccomment",
-    "musiclist": "file:../../features/musiclist"
+    "musiclist": "file:../../features/musiclist",
+    "airdrop": "file:../../features/airdrop"
   }
 }

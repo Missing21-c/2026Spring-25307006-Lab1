@@ -6,3 +6,14 @@ export { MusicPlayMode } from "@bundle:com.huawei.music.musichome/watch@mediacom
 export { PreferencesUtil } from "@bundle:com.huawei.music.musichome/watch@mediacommon/ets/utils/PreferencesUtil";
 export { Logger } from "@bundle:com.huawei.music.musichome/watch@mediacommon/ets/utils/Logger";
 export { ColorConversion } from "@bundle:com.huawei.music.musichome/watch@mediacommon/ets/utils/ColorConversion";
+export { CryptoUtil } from "@bundle:com.huawei.music.musichome/watch@mediacommon/ets/utils/CryptoUtil";
+export { HttpUtil } from "@bundle:com.huawei.music.musichome/watch@mediacommon/ets/utils/HttpUtil";
+export type { HttpResponse } from "@bundle:com.huawei.music.musichome/watch@mediacommon/ets/utils/HttpUtil";
+export { LoginStorageUtil, LoginStorageKeys } from "@bundle:com.huawei.music.musichome/watch@mediacommon/ets/utils/LoginStorageUtil";
+export type { UserInfo, SavedLoginInfo, LoginLimitResult } from "@bundle:com.huawei.music.musichome/watch@mediacommon/ets/utils/LoginStorageUtil";
+export { createDefaultUserInfo, isValidUserInfo } from "@bundle:com.huawei.music.musichome/watch@mediacommon/ets/viewmodel/UserInfo";
+export type { UserInfo as UserInfoModel } from "@bundle:com.huawei.music.musichome/watch@mediacommon/ets/viewmodel/UserInfo";
+export { FilePickerService } from "@bundle:com.huawei.music.musichome/watch@mediacommon/ets/utils/FilePickerService";
+export type { FileObject } from "@bundle:com.huawei.music.musichome/watch@mediacommon/ets/utils/FilePickerService";
+export { LocalMusicService } from "@bundle:com.huawei.music.musichome/watch@mediacommon/ets/utils/LocalMusicService";
+export type { LocalFile } from "@bundle:com.huawei.music.musichome/watch@mediacommon/ets/utils/LocalMusicService";

@@ -1,0 +1,12 @@
+{
+  "string": [
+    {
+      "name": "login_shared_desc",
+      "value": "login"
+    },
+    {
+      "name": "login_title",
+      "value": "Login"
+    }
+  ]
+}

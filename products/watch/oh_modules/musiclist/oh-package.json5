@@ -8,6 +8,7 @@
   "version": "1.0.0",
   "dependencies": {
     "mediacommon": "file:../../common/mediacommon",
-    "constantscommon": "file:../../common/constantscommon"
+    "constantscommon": "file:../../common/constantscommon",
+    "airdrop": "file:../airdrop"
   }
 }

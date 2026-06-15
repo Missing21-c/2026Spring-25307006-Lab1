@@ -79,12 +79,13 @@ export class MusicListPage extends ViewPU {
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Stack.create({ alignContent: Alignment.Top });
             Stack.width(StyleConstants.FULL_WIDTH);
-            Stack.backgroundColor(this.currentBreakpoint === BreakpointConstants.BREAKPOINT_SM ? { "id": 134217810, "type": 10001, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" } : { "id": 134217809, "type": 10001, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
+            Stack.backgroundColor(this.currentBreakpoint === BreakpointConstants.BREAKPOINT_SM ? { "id": 184549458, "type": 10001, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" } : { "id": 184549457, "type": 10001, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "watch" });
             Stack.onAreaChange((oldArea: Area, newArea: Area) => {
                 if (typeof newArea.height === 'number') {
                     this.deviceHeight = newArea.height;
                 }
             });
+            Stack.expandSafeArea([SafeAreaType.SYSTEM]);
         }, Stack);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             __Common__.create();

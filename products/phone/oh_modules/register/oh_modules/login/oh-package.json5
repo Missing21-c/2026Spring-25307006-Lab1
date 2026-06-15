@@ -1,0 +1,13 @@
+{
+  "license": "",
+  "devDependencies": {},
+  "author": "",
+  "name": "login",
+  "description": "Login feature module",
+  "main": "Index.ets",
+  "version": "1.0.0",
+  "dependencies": {
+    "constantscommon": "file:../../common/constantscommon",
+    "mediacommon": "file:../../common/mediacommon"
+  }
+}

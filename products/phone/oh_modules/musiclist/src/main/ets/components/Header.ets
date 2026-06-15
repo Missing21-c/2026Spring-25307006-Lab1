@@ -17,44 +17,73 @@ import { promptAction } from '@kit.ArkUI';
 import { BreakpointType, MenuData } from 'mediacommon';
 import { BreakpointConstants, StyleConstants } from 'constantscommon';
 import { HeaderConstants } from '../constants/HeaderConstants';
+import { DeviceTransferPage } from 'airdrop';
 
 @Component
 export struct Header {
   @StorageProp('currentBreakpoint') currentBreakpoint: string = BreakpointConstants.BREAKPOINT_SM;
   @StorageLink('pageIndexInfos') pageIndexInfos: NavPathStack = new NavPathStack();
+  @State showDeviceTransfer: boolean = false;
 
   build() {
-    Row() {
-      Image($r('app.media.ic_back'))
-        .width($r('app.float.icon_width'))
-        .height($r('app.float.icon_height'))
-        .margin({ left: $r('app.float.icon_margin') })
-        .onClick(() => {
-          this.pageIndexInfos.pop();
+    Column() {
+      Row() {
+        Image($r('app.media.ic_back'))
+          .width($r('app.float.icon_width'))
+          .height($r('app.float.icon_height'))
+          .margin({ left: $r('app.float.icon_margin') })
+          .onClick(() => {
+            this.pageIndexInfos.pop();
+          })
+        Text($r('app.string.play_list'))
+          .fontSize(new BreakpointType({
+            sm: $r('app.float.header_font_sm'),
+            md: $r('app.float.header_font_md'),
+            lg: $r('app.float.header_font_lg')
+          }).getValue(this.currentBreakpoint))
+          .fontWeight(HeaderConstants.TITLE_FONT_WEIGHT)
+          .fontColor($r('app.color.title_color'))
+          .opacity($r('app.float.title_opacity'))
+          .letterSpacing(HeaderConstants.LETTER_SPACING)
+          .padding({ left: $r('app.float.title_padding_left') })
+
+        Blank()
+
+        // 设备传输按钮
+        Image($r('app.media.ic_device_phone'))
+          .width($r('app.float.icon_width'))
+          .height($r('app.float.icon_height'))
+          .margin({ right: 8 })
+          .onClick(() => {
+            this.showDeviceTransfer = true;
+          })
+
+        Image($r('app.media.ic_more'))
+          .width($r('app.float.icon_width'))
+          .height($r('app.float.icon_height'))
+          .margin({ right: $r('app.float.icon_margin') })
+          .bindMenu(this.getMenu())
+      }
+      .width(StyleConstants.FULL_WIDTH)
+      .height($r('app.float.title_bar_height'))
+      .zIndex(HeaderConstants.Z_INDEX)
+
+      // 设备传输页面
+      if (this.showDeviceTransfer) {
+        DeviceTransferPage({
+          isShow: $showDeviceTransfer,
+          onComplete: (success: boolean, files: string[]) => {
+            if (success) {
+              this.getUIContext().getPromptAction().showToast({
+                message: `传输完成，共${files.length}个文件`,
+                duration: 2000
+              });
+            }
+          }
         })
-      Text($r('app.string.play_list'))
-        .fontSize(new BreakpointType({
-          sm: $r('app.float.header_font_sm'),
-          md: $r('app.float.header_font_md'),
-          lg: $r('app.float.header_font_lg')
-        }).getValue(this.currentBreakpoint))
-        .fontWeight(HeaderConstants.TITLE_FONT_WEIGHT)
-        .fontColor($r('app.color.title_color'))
-        .opacity($r('app.float.title_opacity'))
-        .letterSpacing(HeaderConstants.LETTER_SPACING)
-        .padding({ left: $r('app.float.title_padding_left') })
-
-      Blank()
-
-      Image($r('app.media.ic_more'))
-        .width($r('app.float.icon_width'))
-        .height($r('app.float.icon_height'))
-        .margin({ right: $r('app.float.icon_margin') })
-        .bindMenu(this.getMenu())
+      }
     }
     .width(StyleConstants.FULL_WIDTH)
-    .height($r('app.float.title_bar_height'))
-    .zIndex(HeaderConstants.Z_INDEX)
   }
 
   getMenu(): MenuData[] {

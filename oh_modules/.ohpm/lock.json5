@@ -34,9 +34,41 @@
       "dynamicDependencies": {},
       "maskedByOverrideDependencyMap": false
     },
+    "features/airdrop": {
+      "name": "airdrop",
+      "dependencies": {
+        "mediacommon": {
+          "specifier": "file:common/mediacommon",
+          "version": "file:common/mediacommon"
+        },
+        "constantscommon": {
+          "specifier": "file:common/constantscommon",
+          "version": "file:common/constantscommon"
+        }
+      },
+      "devDependencies": {},
+      "dynamicDependencies": {},
+      "maskedByOverrideDependencyMap": false
+    },
     "features/live": {
       "name": "live",
       "dependencies": {},
+      "devDependencies": {},
+      "dynamicDependencies": {},
+      "maskedByOverrideDependencyMap": false
+    },
+    "features/login": {
+      "name": "login",
+      "dependencies": {
+        "constantscommon": {
+          "specifier": "file:common/constantscommon",
+          "version": "file:common/constantscommon"
+        },
+        "mediacommon": {
+          "specifier": "file:common/mediacommon",
+          "version": "file:common/mediacommon"
+        }
+      },
       "devDependencies": {},
       "dynamicDependencies": {},
       "maskedByOverrideDependencyMap": false
@@ -67,6 +99,30 @@
         "constantscommon": {
           "specifier": "file:common/constantscommon",
           "version": "file:common/constantscommon"
+        },
+        "airdrop": {
+          "specifier": "file:features/airdrop",
+          "version": "file:features/airdrop"
+        }
+      },
+      "devDependencies": {},
+      "dynamicDependencies": {},
+      "maskedByOverrideDependencyMap": false
+    },
+    "features/register": {
+      "name": "register",
+      "dependencies": {
+        "mediacommon": {
+          "specifier": "file:common/mediacommon",
+          "version": "file:common/mediacommon"
+        },
+        "constantscommon": {
+          "specifier": "file:common/constantscommon",
+          "version": "file:common/constantscommon"
+        },
+        "login": {
+          "specifier": "file:features/login",
+          "version": "file:features/login"
         }
       },
       "devDependencies": {},
@@ -80,9 +136,21 @@
           "specifier": "file:common/constantscommon",
           "version": "file:common/constantscommon"
         },
+        "mediacommon": {
+          "specifier": "file:common/mediacommon",
+          "version": "file:common/mediacommon"
+        },
         "live": {
           "specifier": "file:features/live",
           "version": "file:features/live"
+        },
+        "login": {
+          "specifier": "file:features/login",
+          "version": "file:features/login"
+        },
+        "register": {
+          "specifier": "file:features/register",
+          "version": "file:features/register"
         },
         "musiccomment": {
           "specifier": "file:features/musiccomment",
@@ -91,6 +159,10 @@
         "musiclist": {
           "specifier": "file:features/musiclist",
           "version": "file:features/musiclist"
+        },
+        "airdrop": {
+          "specifier": "file:features/airdrop",
+          "version": "file:features/airdrop"
         }
       },
       "devDependencies": {},
@@ -153,8 +225,8 @@
       "dynamic": false,
       "maskedByOverrideDependencyMap": false
     },
-    "musiclist@file:features/musiclist": {
-      "storePath": "features/musiclist",
+    "musiccomment@file:features/musiccomment": {
+      "storePath": "features/musiccomment",
       "dependencies": {
         "mediacommon": "common/mediacommon",
         "constantscommon": "common/constantscommon"
@@ -164,11 +236,46 @@
       "dynamic": false,
       "maskedByOverrideDependencyMap": false
     },
-    "musiccomment@file:features/musiccomment": {
-      "storePath": "features/musiccomment",
+    "login@file:features/login": {
+      "storePath": "features/login",
+      "dependencies": {
+        "constantscommon": "common/constantscommon",
+        "mediacommon": "common/mediacommon"
+      },
+      "dynamicDependencies": {},
+      "dev": false,
+      "dynamic": false,
+      "maskedByOverrideDependencyMap": false
+    },
+    "airdrop@file:features/airdrop": {
+      "storePath": "features/airdrop",
       "dependencies": {
         "mediacommon": "common/mediacommon",
         "constantscommon": "common/constantscommon"
+      },
+      "dynamicDependencies": {},
+      "dev": false,
+      "dynamic": false,
+      "maskedByOverrideDependencyMap": false
+    },
+    "musiclist@file:features/musiclist": {
+      "storePath": "features/musiclist",
+      "dependencies": {
+        "mediacommon": "common/mediacommon",
+        "constantscommon": "common/constantscommon",
+        "airdrop": "features/airdrop"
+      },
+      "dynamicDependencies": {},
+      "dev": false,
+      "dynamic": false,
+      "maskedByOverrideDependencyMap": false
+    },
+    "register@file:features/register": {
+      "storePath": "features/register",
+      "dependencies": {
+        "mediacommon": "common/mediacommon",
+        "constantscommon": "common/constantscommon",
+        "login": "features/login"
       },
       "dynamicDependencies": {},
       "dev": false,

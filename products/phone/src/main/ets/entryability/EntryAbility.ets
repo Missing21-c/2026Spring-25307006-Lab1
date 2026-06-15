@@ -17,6 +17,13 @@ import { hilog } from '@kit.PerformanceAnalysisKit';
 import { display, window } from '@kit.ArkUI';
 import { BreakpointConstants } from 'constantscommon';
 import { BusinessError } from '@kit.BasicServicesKit';
+import {
+  AirDropViewModel,
+  TransferHistoryService,
+  FileSelectionService,
+  DeviceTransferViewModel,
+  NotificationService
+} from 'airdrop';
 
 export default class EntryAbility extends UIAbility {
   private windowObj?: window.Window;
@@ -24,6 +31,47 @@ export default class EntryAbility extends UIAbility {
   onCreate(want: Want, launchParam: AbilityConstant.LaunchParam) {
     AppStorage.setOrCreate('context', this.context);
     hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onCreate');
+
+    // 初始化传输服务
+    this.initializeTransferServices();
+  }
+
+  /**
+   * 初始化传输服务
+   */
+  private async initializeTransferServices(): Promise<void> {
+    try {
+      // 初始化 AirDropViewModel
+      const airDropViewModel = AirDropViewModel.getInstance();
+      await airDropViewModel.initialize(this.context);
+
+      // 初始化传输历史服务
+      const historyService = TransferHistoryService.getInstance();
+      await historyService.initialize(this.context);
+
+      // 初始化文件选择服务
+      const fileSelectionService = FileSelectionService.getInstance();
+      fileSelectionService.initialize(this.context);
+
+      // 初始化通知服务
+      const notificationService = NotificationService.getInstance();
+      notificationService.initialize(this.context);
+
+      // 设置接收监听
+      const transferViewModel = DeviceTransferViewModel.getInstance();
+      transferViewModel.setupReceiveListener(
+        (request) => {
+          hilog.info(0x0000, 'TransferService', `Received transfer request: ${request.fileName}`);
+        },
+        (fileName, fileData) => {
+          hilog.info(0x0000, 'TransferService', `Received file: ${fileName}, size: ${fileData.byteLength}`);
+        }
+      );
+
+      hilog.info(0x0000, 'TransferService', 'All transfer services initialized');
+    } catch (error) {
+      hilog.error(0x0000, 'TransferService', `Initialize failed: ${JSON.stringify(error)}`);
+    }
   }
 
   onDestroy() {

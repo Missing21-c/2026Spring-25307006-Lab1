@@ -1,0 +1,37 @@
+{
+  "modulePathMap": {
+    "phone": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\phone",
+    "musiclist": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiclist",
+    "musiccomment": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\musiccomment",
+    "live": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\live",
+    "login": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\login",
+    "register": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\register",
+    "airdrop": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\features\\airdrop",
+    "mediacommon": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\mediacommon",
+    "constantscommon": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\common\\constantscommon",
+    "watch": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\watch"
+  },
+  "compileMode": "esmodule",
+  "projectRootPath": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master",
+  "nodeModulesPath": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\phone\\build\\default\\intermediates\\loader_out\\default\\node_modules",
+  "byteCodeHarInfo": {},
+  "declarationEntry": [],
+  "moduleName": "phone",
+  "hspNameOhmMap": {},
+  "harNameOhmMap": {},
+  "packageManagerType": "ohpm",
+  "compileEntry": [
+    "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\phone\\build\\default\\generated\\r\\default\\ResourceTable.ts"
+  ],
+  "otherCompileFiles": [],
+  "dynamicImportLibInfo": {},
+  "routerMap": [],
+  "hspResourcesMap": {},
+  "updateVersionInfo": {},
+  "customizedHar": false,
+  "anBuildOutPut": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\phone\\build\\default\\intermediates\\loader_out\\default\\an\\arm64-v8a",
+  "anBuildMode": "type",
+  "patchConfig": {
+    "changedFileList": "D:\\kaiyuan\\MusicHome-master\\MusicHome-master\\products\\phone\\build\\default\\intermediates\\patch\\default\\changedFileList.json"
+  }
+}

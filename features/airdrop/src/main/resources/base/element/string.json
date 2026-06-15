@@ -1,0 +1,12 @@
+{
+  "string": [
+    {
+      "name": "airdrop_module_desc",
+      "value": "AirDrop Module"
+    },
+    {
+      "name": "airdrop_title",
+      "value": "投送到设备"
+    }
+  ]
+}
